@@ -1,0 +1,20 @@
+{
+  "hosts" : [ {
+    "title" : "tigra",
+    "threads" : [ {
+      "title" : "10044@tigra.pool-1-thread-1(11)",
+      "testCases" : [ {
+        "uid" : "774d75d0ddea2ff5",
+        "name" : "A scenario with some pending steps",
+        "title" : "A scenario with some pending steps",
+        "time" : {
+          "start" : 1488341451929,
+          "stop" : 1488341466513,
+          "duration" : 14584
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      } ]
+    } ]
+  } ]
+}

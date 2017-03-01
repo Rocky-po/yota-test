@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Wed Mar 01 07:11:06 MSK 2017
+threads=1
+total=14000
+ru/tieto/test/stories/my.story=14000
+threadAverage=14000
