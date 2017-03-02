@@ -106,8 +106,9 @@ public class YotaPage {
         return this;
     }
 
-    public void doReset(){
+    public YotaPage doReset(){
         driver.findElement(doReset).click();
+        return this;
     }
 
 
