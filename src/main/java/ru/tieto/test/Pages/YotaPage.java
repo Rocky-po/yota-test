@@ -32,12 +32,14 @@ public class YotaPage {
         this.driver = driver;
     }
 
-    public void decreaseSlider(){
+    public YotaPage decreaseSlider(){
         driver.findElement(decreaseSlider).click();
+        return this;
     }
 
-    public void increaseSlider(){
+    public YotaPage increaseSlider(){
         driver.findElement(increaseSlider).click();
+        return this;
     }
 
     public YotaPage checkNewNumberOfSpeed(String expectedNumber){
@@ -76,21 +78,32 @@ public class YotaPage {
         return this;
     }
 
-    public void connectionNewConditions(){
+    public YotaPage connectionNewConditions(){
         driver.findElement(connectionButton).click();
+        return this;
     }
 
-    public String getBalance(){
-        return driver.findElement(balance).getText();
+    public YotaPage getBalance(String expectedBalance){
+        if (!expectedBalance.equals(driver.findElement(balance).getText()))
+            Assert.fail("Текущий баланс несоответствует ожидаемому значению");
+        return this;
     }
 
-    public void setBalance(String balance){
+    public YotaPage setBalance(String balance){
         driver.findElement(topUpAmount).clear();
         driver.findElement(topUpAmount).sendKeys(balance);
+        return this;
     }
 
-    public void doPayment(){
+    public YotaPage doPayment(){
         driver.findElement(doPayment).click();
+        return this;
+    }
+
+    public YotaPage connectionButtonDisabled(){
+        if (!"btn disabled".equals(driver.findElement(connectionButton).getAttribute("class")))
+            Assert.fail("Кнопка подключить - активна, хотя должна быть неактивна");
+        return this;
     }
 
     public void doReset(){
