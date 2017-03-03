@@ -55,6 +55,16 @@
       <artifactId>allure-java-aspects</artifactId>
       <version>${allure.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-chrome-driver</artifactId>
+      <version>RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-support</artifactId>
+      <version>RELEASE</version>
+    </dependency>
 
   </dependencies>
 

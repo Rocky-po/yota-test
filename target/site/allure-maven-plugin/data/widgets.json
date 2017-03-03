@@ -2,17 +2,17 @@
   "hash" : "9ae4a52f46fbba0c959575303f697deb73e72d63",
   "data" : [ {
     "statistic" : {
-      "total" : 1,
-      "passed" : 0,
-      "pending" : 0,
+      "total" : 24,
+      "passed" : 9,
+      "pending" : 1,
       "canceled" : 0,
-      "failed" : 0,
-      "broken" : 1
+      "failed" : 14,
+      "broken" : 0
     },
     "time" : {
-      "start" : 1488341451929,
-      "stop" : 1488341466513,
-      "duration" : 14584
+      "start" : 1488516673320,
+      "stop" : 1488516682839,
+      "duration" : 9519
     },
     "name" : "total",
     "type" : "TOTAL"
@@ -20,22 +20,58 @@
     "name" : "defects",
     "type" : "DEFECTS",
     "data" : [ {
+      "count" : 2,
+      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 4.1, получили - 3.1",
+      "status" : "FAILED"
+    }, {
       "count" : 1,
-      "message" : "BeforeOrAfterFailed: Method defaultState (annotated with @AfterScenario in class ru.tieto.test.steps.YotaTestSteps) failed: java.lang.NullPointerException",
-      "status" : "BROKEN"
+      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 1.0, получили - 896",
+      "status" : "FAILED"
+    }, {
+      "count" : 1,
+      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 2.1, получили - 1.7",
+      "status" : "FAILED"
+    }, {
+      "count" : 1,
+      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 5.0, получили - 3.1",
+      "status" : "FAILED"
+    }, {
+      "count" : 1,
+      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 5.7, получили - 3.1",
+      "status" : "FAILED"
+    }, {
+      "count" : 1,
+      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 6.4, получили - 3.1",
+      "status" : "FAILED"
+    }, {
+      "count" : 1,
+      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 7.1, получили - 3.1",
+      "status" : "FAILED"
+    }, {
+      "count" : 1,
+      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 7.8, получили - 3.1",
+      "status" : "FAILED"
+    }, {
+      "count" : 1,
+      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 8.5, получили - 3.1",
+      "status" : "FAILED"
+    }, {
+      "count" : 1,
+      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 9.2, получили - 3.1",
+      "status" : "FAILED"
     } ]
   }, {
     "name" : "xunit",
     "type" : "TITLE_STATISTICS",
     "data" : [ {
-      "title" : "my.story",
+      "title" : "yotaPanel.story",
       "statistic" : {
-        "total" : 1,
-        "passed" : 0,
-        "pending" : 0,
+        "total" : 24,
+        "passed" : 9,
+        "pending" : 1,
         "canceled" : 0,
-        "failed" : 0,
-        "broken" : 1
+        "failed" : 14,
+        "broken" : 0
       }
     } ]
   }, {
@@ -44,12 +80,12 @@
     "data" : [ {
       "title" : "Without feature",
       "statistic" : {
-        "total" : 1,
-        "passed" : 0,
-        "pending" : 0,
+        "total" : 24,
+        "passed" : 9,
+        "pending" : 1,
         "canceled" : 0,
-        "failed" : 0,
-        "broken" : 1
+        "failed" : 14,
+        "broken" : 0
       }
     } ]
   }, {

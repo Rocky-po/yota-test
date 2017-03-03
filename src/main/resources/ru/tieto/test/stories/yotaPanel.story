@@ -1,67 +1,24 @@
-Scenario: check increase balance
+Scenario: check that to click button reset do reset all characters
 
-Given I see that balance is <defaultBalance>
+Given I see default current <defaultCurNumber> of <defaultCurSpeed>
+And I see default current <defaultCurPrice>
 When I add <payNumber> of money
 And I click top up balance
+And I click increase button
+And I click increase button
+And I click increase button
+And I click connection button
+And I click reset button
 Then I see that balance is <balance>
-
-Examples:
-|   defaultBalance |   number  |   balance  |
-|   0              |    500    |    500     |
-|   0              |    1000   |    1500    |
-
-Scenario: check that I can connect new conditions
-
-Given I see default current <defaultCurNumber> of <defaultCurSpeed>
-And I see default current <defaultCurPrice>
-When I add <payNumber> of money
-And I click top up balance
-And I click increase button
-And I click increase button
-And I click connection button
-Then I see current <curNumber> of <curSpeed>
+And I see current <curNumber> of <curSpeed>
 And I see current <curPrice>
+And I see that new speed is <newNumber> of <newSpeed>
+And I see that new price is <newPrice>
 
 Examples:
-|defaultCurNumber| defaultCurSpeed    |defaultCurPrice|payNumber|curNumber|     curSpeed       |curPrice  |
-|       64       |  Кбит/сек (макс.)  |      0        |  5000   |  416    |   Кбит/сек (макс.) |   350    |
+|defaultCurNumber| defaultCurSpeed    |defaultCurPrice|curNumber|     curSpeed       |curPrice  |newNumber   |  newSpeed        | newPrice  |
+|      64        |   Кбит/сек (макс.) |      0        |   64    |   Кбит/сек (макс.) |    0     |   64       | Кбит/сек (макс.) |     0     |
 
-Scenario: check that I can't connect new conditions when I have same conditions
-
-Given I see default current <defaultCurNumber> of <defaultCurSpeed>
-And I see default current <defaultCurPrice>
-When I add <payNumber> of money
-And I click top up balance
-And I click increase button
-And I click increase button
-And I click connection button
-Then I see current <curNumber> of <curSpeed>
-And I see current <curPrice>
-When I click increase button
-And I click decrease button
-Then I see that connection button is disables
-When I click decrease button
-And I click increase button
-Then I see that connection button is disables
-
-Examples:
-|defaultCurNumber| defaultCurSpeed    |defaultCurPrice|payNumber|number|     curSpeed       |curPrice  |
-|       64       |  Кбит/сек (макс.)  |      0        |  5000   |  416 |   Кбит/сек (макс.) |   350    |
-
-Scenario: check that I can't connect new conditions when I hane not enough money
-
-Given I see default current <defaultCurNumber> of <defaultCurSpeed>
-And I see default current <defaultCurPrice>
-When I add <payNumber> of money
-And I click top up balance
-And I click increase button
-And I click increase button
-And I click increase button
-Then I see that connection button is disables
-
-Examples:
-|defaultCurNumber| defaultCurSpeed    |defaultCurPrice|payNumber|
-|      64        |   Кбит/сек (макс.) |      0        |  300    |
 
 Scenario: check that I can connect all conditions
 
@@ -99,24 +56,3 @@ Examples:
 |      10.0      |   Мбит/сек (макс.) |      1250     |  5000   |    12.0 |   Мбит/сек (макс.) |   1300   |
 |      12.0      |   Мбит/сек (макс.) |      1300     |  5000   |    15.0 |   Мбит/сек (макс.) |   1350   |
 |      15.0      |   Мбит/сек (макс.) |      1350     |  5000   |    Макс |   Мбит/сек (макс.) |   1400   |
-
-Scenario: check that to click button reset do reset all characters
-
-Given I see default current <defaultCurNumber> of <defaultCurSpeed>
-And I see default current <defaultCurPrice>
-When I add <payNumber> of money
-And I click top up balance
-And I click increase button
-And I click increase button
-And I click increase button
-And I click connection button
-And I click reset button
-Then I see that balance is <balance>
-And I see current <curNumber> of <curSpeed>
-And I see current <curPrice>
-And I see that new speed is <newNumber> of <newSpeed>
-And I see that new price is <newPrice>
-
-Examples:
-|defaultCurNumber| defaultCurSpeed    |defaultCurPrice|curNumber|     curSpeed       |curPrice  |newNumber   |  newSpeed        | newPrice  |
-|      64        |   Кбит/сек (макс.) |      0        |   64    |   Кбит/сек (макс.) |    0     |   64       | Кбит/сек (макс.) |     0     |

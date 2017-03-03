@@ -2,7 +2,9 @@ package ru.tieto.test.Pages;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 /**
  * Created by rocky-po on 01.03.17.
@@ -12,19 +14,19 @@ public class YotaPage {
     /*
     Define page elements
      */
-    private By decreaseSlider       = By.className("decrease");
-    private By increaseSlider       = By.className("increase");
-    private By newNumberOfSpeed     = By.xpath("/html/body/div/div[2]/div[3]/div[2]/div/div/div/div[1]/strong");
-    private By newSpeed             = By.id("");
+    private By decreaseSlider       = By.xpath("/html/body/div/div[2]/div[2]/div[2]/a");
+    private By increaseSlider       = By.xpath("/html/body/div/div[2]/div[2]/div[5]/a");
+    private By newNumberOfSpeed     = By.xpath("/html/body/div/div[2]/div[3]/div[2]/div/div/div/div[2]/strong");
+    private By newSpeed             = By.xpath("/html/body/div/div[2]/div[3]/div[2]/div/div/div/div[2]/span");
     private By newPrice             = By.xpath("/html/body/div/div[2]/div[3]/div[2]/div/div/div/div[3]/strong");
     private By currentNumberOfSpeed = By.xpath("/html/body/div/div[2]/div[1]/div/div[2]/div/div/div[2]/strong");
-    private By currentSpeed         = By.xpath("");
+    private By currentSpeed         = By.xpath("/html/body/div/div[2]/div[1]/div/div[2]/div/div/div[2]/span");
     private By currentPrice         = By.xpath("/html/body/div/div[2]/div[1]/div/div[2]/div/div/div[3]/strong");
-    private By connectionButton     = By.linkText("Подключить");
+    private By connectionButton     = By.xpath("/html/body/div/div[2]/div[3]/div[2]/div/div/div/a");
     private By balance              = By.xpath("/html/body/div/div[1]/div/dl/dd/span");
-    private By topUpAmount          = By.id("amount");
-    private By doPayment            = By.linkText("Пополнить счет");
-    private By doReset              = By.linkText("Сброс");
+    private By topUpAmount          = By.xpath("/html/body/div/div[1]/div/div/div[1]/div[1]/div[1]/input");
+    private By doPayment            = By.xpath("/html/body/div/div[1]/div/div/div[1]/div[2]/a[1]");
+    private By doReset              = By.xpath("/html/body/div/div[1]/div/div/div[1]/div[2]/a[2]");
 
     private final WebDriver driver;
 
@@ -32,49 +34,63 @@ public class YotaPage {
         this.driver = driver;
     }
 
-    public YotaPage decreaseSlider(){
-        driver.findElement(decreaseSlider).click();
+    public YotaPage open (String url){
+        driver.get(url);
+        driver.manage().window().maximize();
         return this;
     }
 
-    public YotaPage increaseSlider(){
-        driver.findElement(increaseSlider).click();
+    public YotaPage decreaseSlider(){
+        WebElement element = driver.findElement(decreaseSlider);
+        javaScriptClick(element);
+        return this;
+    }
+
+    public YotaPage increaseSlider() {
+        WebElement element = driver.findElement(increaseSlider);
+        javaScriptClick(element);
         return this;
     }
 
     public YotaPage checkNewNumberOfSpeed(String expectedNumber){
-        if (!expectedNumber.equals(driver.findElement(newNumberOfSpeed).getText()))
-            Assert.fail("Число новой скорости не соответствует ожидаемому значению");
+        String getNewNumber = driver.findElement(newNumberOfSpeed).getText();
+        if (!expectedNumber.equals(getNewNumber))
+            Assert.fail("Число новой скорости не соответствует ожидаемому значению: ожидаем - " + expectedNumber + ", получаем - " + getNewNumber);
         return this;
     }
 
     public YotaPage checkNewSpeed(String expectedSpeed){
-        if (!expectedSpeed.equals(driver.findElement(newSpeed).getText()))
-            Assert.fail("Единица измерения новой скорости не соответствует ожидаемому значению");
+        String getNewSpeed = driver.findElement(newSpeed).getText().trim();
+        if (!expectedSpeed.equals(getNewSpeed))
+            Assert.fail("Единица измерения новой скорости не соответствует ожидаемому значению: ожидаем - " + expectedSpeed + ", получили - " + getNewSpeed);
         return this;
     }
 
     public YotaPage checkNewPrice(String expectedPrice){
-        if (!expectedPrice.equals(driver.findElement(newPrice).getText()))
-            Assert.fail("Новая стоимость несоответствует ожидаемому значению");
+        String getNewPrice = driver.findElement(newPrice).getText();
+        if (!expectedPrice.equals(getNewPrice))
+            Assert.fail("Новая стоимость несоответствует ожидаемому значению: ожидаем - " + expectedPrice + ", получили - " + getNewPrice);
         return this;
     }
 
     public YotaPage checkCurrentNumberOfSpeed(String expectedNumber){
-        if (!expectedNumber.equals(driver.findElement(currentNumberOfSpeed).getText()))
-            Assert.fail("Число текущей скорости не соответствует ожидаемому значению");
+        String getCurNumber = driver.findElement(currentNumberOfSpeed).getText();
+        if (!expectedNumber.equals(getCurNumber))
+            Assert.fail("Число текущей скорости не соответствует ожидаемому значению: ожидаем - " + expectedNumber + ", получили - " + getCurNumber);
         return this;
     }
 
     public YotaPage checkCurrentSpeed(String expectedSpeed){
-        if (!expectedSpeed.equals(driver.findElement(currentSpeed).getText()))
-            Assert.fail("Единица измерения текущей скорости не соответствует ожидаемому значению");
+        String getCurSpeed = driver.findElement(currentSpeed).getText();
+        if (!expectedSpeed.equals(getCurSpeed))
+            Assert.fail("Единица измерения текущей скорости не соответствует ожидаемому значению: ожидаем - " + expectedSpeed + ", получили - " + getCurSpeed);
         return this;
     }
 
     public YotaPage checkCurrentPrice(String expectedPrice){
-        if (!expectedPrice.equals(driver.findElement(currentPrice).getText()))
-            Assert.fail("Текущая стоимость несоответствует ожидаемому значению");
+        String getCurPrice = driver.findElement(currentPrice).getText();
+        if (!expectedPrice.equals(getCurPrice))
+            Assert.fail("Текущая стоимость несоответствует ожидаемому значению: ожидаем - " + expectedPrice + ", получили - " + getCurPrice);
         return this;
     }
 
@@ -84,8 +100,9 @@ public class YotaPage {
     }
 
     public YotaPage getBalance(String expectedBalance){
-        if (!expectedBalance.equals(driver.findElement(balance).getText()))
-            Assert.fail("Текущий баланс несоответствует ожидаемому значению");
+        String getBalance = driver.findElement(balance).getText();
+        if (!expectedBalance.equals(getBalance))
+            Assert.fail("Текущий баланс несоответствует ожидаемому значению: ожтдаем - " + expectedBalance + ", получили - " + getBalance);
         return this;
     }
 
@@ -111,5 +128,14 @@ public class YotaPage {
         return this;
     }
 
+    public YotaPage close(){
+        driver.quit();
+        return this;
+    }
 
+    private YotaPage javaScriptClick(WebElement element){
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].click();", element);
+        return this;
+    }
 }

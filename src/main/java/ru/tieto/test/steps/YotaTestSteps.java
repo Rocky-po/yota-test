@@ -16,12 +16,13 @@ public class YotaTestSteps {
     WebDriver driver;
     YotaPage yotaPage;
 
-    @BeforeScenario
+//    @BeforeStories
     public void startProject() throws IOException, InterruptedException {
         ProcessBuilder processBuilder = new ProcessBuilder("java", "-jar", "test-slider-1.0.0-SNAPSHOT.jar");
         processBuilder.directory(new File("./"));
         processBuilder.start();
-        Thread.sleep(5000);
+//        Thread.sleep(5000);
+        System.out.println("Все пучком");
     }
 
     @BeforeStory
@@ -135,22 +136,18 @@ public class YotaTestSteps {
         yotaPage.connectionButtonDisabled();
     }
 
-    @When("I click reset button")
+    @Given("I click reset button")
+    @Then("I click reset button")
     @Step("click reset button")
     public void clickResetButton(){
         yotaPage.doReset();
     }
 
-    @AfterScenario
-    public void defaultState(){
-        yotaPage.doReset();
-    }
-
     @AfterStory
     public void closeWindow(){
+        yotaPage.doReset();
         yotaPage.close();
     }
-
 
     @Test
     public void test() throws InterruptedException {
@@ -163,8 +160,8 @@ public class YotaTestSteps {
         yotaPage.increaseSlider();
         yotaPage.increaseSlider();
         yotaPage.increaseSlider();
-        yotaPage.decreaseSlider();
-        yotaPage.decreaseSlider();
-        yotaPage.decreaseSlider();
+        yotaPage.setBalance("50000");
+        yotaPage.doPayment();
+        yotaPage.doReset();
     }
 }
