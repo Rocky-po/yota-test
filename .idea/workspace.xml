@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c63256e-322a-49bc-b684-e3f8678e0e72" name="Default" comment="add comments, javascript method and start/stop methods in object. Now use chromedriver">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/allure-results/23c92a8e-9339-4af1-80eb-4ff0cd509cea-testsuite.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/allure-results/75c83d19-34b7-4c58-9d89-03f3f2e6d5dd-testsuite.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/allure-results/f1090fd8-287e-4468-b2ba-11269fb77294-testsuite.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/tieto/test/stories/my.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/774d75d0ddea2ff5-testcase.json" afterPath="" />
+    <list default="true" id="3c63256e-322a-49bc-b684-e3f8678e0e72" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/tieto/test/Pages/YotaPage.class" afterPath="$PROJECT_DIR$/target/classes/ru/tieto/test/Pages/YotaPage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/tieto/test/steps/YotaTestSteps.class" afterPath="$PROJECT_DIR$/target/classes/ru/tieto/test/steps/YotaTestSteps.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/yota-test-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/yota-test-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/tieto/test/Pages/YotaPage.java" afterPath="$PROJECT_DIR$/src/main/java/ru/tieto/test/Pages/YotaPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/tieto/test/steps/YotaTestSteps.java" afterPath="$PROJECT_DIR$/src/main/java/ru/tieto/test/steps/YotaTestSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/ru/tieto/test/stories/yotaPanel.story" afterPath="$PROJECT_DIR$/src/main/resources/ru/tieto/test/stories/yotaPanel.story" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/storyDurations.props" afterPath="$PROJECT_DIR$/target/jbehave/storyDurations.props" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/index.html" afterPath="$PROJECT_DIR$/target/jbehave/view/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/reports.html" afterPath="$PROJECT_DIR$/target/jbehave/view/reports.html" />
@@ -29,7 +20,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/total.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/total.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/widgets.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/widgets.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/xunit.json" afterPath="$PROJECT_DIR$/target/site/allure-maven-plugin/data/xunit.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yota-test.iml" afterPath="$PROJECT_DIR$/yota-test.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -866,7 +856,7 @@
       <workItem from="1488312990619" duration="8012000" />
       <workItem from="1488327746169" duration="15595000" />
       <workItem from="1488346751287" duration="63000" />
-      <workItem from="1488494782574" duration="22761000" />
+      <workItem from="1488494782574" duration="22796000" />
     </task>
     <task id="LOCAL-00001" summary="add comments, javascript method and start/stop methods in object. Now use chromedriver">
       <created>1488508330071</created>
@@ -875,7 +865,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488508330071</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add comments, javascript method and start/stop methods in object. Now use chromedriver">
+      <created>1488568501158</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1488568501158</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -911,7 +908,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46431000" />
+    <option name="totallyTimeSpent" value="46466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
