@@ -1,0 +1,167 @@
+{
+  "uid" : "7fc66423d057df39",
+  "name" : "check that I can connect all conditions {defaultCurNumber=320, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=300, payNumber=5000, curNumber=416, curSpeed=Кбит/сек (макс.), curPrice=350}",
+  "title" : "check that I can connect all conditions {defaultCurNumber=320, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=300, payNumber=5000, curNumber=416, curSpeed=Кбит/сек (макс.), curPrice=350}",
+  "time" : {
+    "start" : 1488516674837,
+    "stop" : 1488516675546,
+    "duration" : 709
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 8
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "a22d61b8df0db0ca",
+    "name" : "ru/tieto/test/stories/yotaPanel.story",
+    "title" : "yotaPanel.story"
+  },
+  "steps" : [ {
+    "name" : "Given I see default current ｟320｠ of ｟Кбит/сек (макс.)｠",
+    "title" : "Given I see default current ｟320｠ of ｟Кбит/сек (макс.)｠",
+    "time" : {
+      "start" : 1488516674837,
+      "stop" : 1488516674924,
+      "duration" : 87
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "And I see default current ｟300｠",
+    "title" : "And I see default current ｟300｠",
+    "time" : {
+      "start" : 1488516674924,
+      "stop" : 1488516674969,
+      "duration" : 45
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "When I add ｟5000｠ of money",
+    "title" : "When I add ｟5000｠ of money",
+    "time" : {
+      "start" : 1488516674969,
+      "stop" : 1488516675091,
+      "duration" : 122
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "And I click top up balance",
+    "title" : "And I click top up balance",
+    "time" : {
+      "start" : 1488516675091,
+      "stop" : 1488516675173,
+      "duration" : 82
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "And I click increase button",
+    "title" : "And I click increase button",
+    "time" : {
+      "start" : 1488516675173,
+      "stop" : 1488516675240,
+      "duration" : 67
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "And I click connection button",
+    "title" : "And I click connection button",
+    "time" : {
+      "start" : 1488516675240,
+      "stop" : 1488516675357,
+      "duration" : 117
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Then I see current ｟416｠ of ｟Кбит/сек (макс.)｠",
+    "title" : "Then I see current ｟416｠ of ｟Кбит/сек (макс.)｠",
+    "time" : {
+      "start" : 1488516675357,
+      "stop" : 1488516675489,
+      "duration" : 132
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "And I see current ｟350｠",
+    "title" : "And I see current ｟350｠",
+    "time" : {
+      "start" : 1488516675489,
+      "stop" : 1488516675546,
+      "duration" : 57
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "framework",
+    "value" : "JBehave"
+  }, {
+    "name" : "suite-title",
+    "value" : "yotaPanel.story"
+  }, {
+    "name" : "host",
+    "value" : "tigra"
+  }, {
+    "name" : "thread",
+    "value" : "14455@tigra.pool-1-thread-1(11)"
+  }, {
+    "name" : "suite-name",
+    "value" : "ru/tieto/test/stories/yotaPanel.story"
+  } ],
+  "parameters" : [ ]
+}

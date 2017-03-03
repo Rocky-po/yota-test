@@ -1,0 +1,170 @@
+{
+  "uid" : "a1f970b341ac7331",
+  "name" : "check that I can connect all conditions {defaultCurNumber=8.5, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1150, payNumber=5000, curNumber=9.2, curSpeed=Мбит/сек (макс.), curPrice=1200}",
+  "title" : "check that I can connect all conditions {defaultCurNumber=8.5, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1150, payNumber=5000, curNumber=9.2, curSpeed=Мбит/сек (макс.), curPrice=1200}",
+  "time" : {
+    "start" : 1488516682634,
+    "stop" : 1488516682672,
+    "duration" : 38
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 8
+  },
+  "failure" : {
+    "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 8.5, получили - 3.1",
+    "stackTrace" : "java.lang.AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 8.5, получили - 3.1\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat ru.tieto.test.Pages.YotaPage.checkCurrentNumberOfSpeed(YotaPage.java:79)\n\tat ru.tieto.test.steps.YotaTestSteps.checkDefaultCurrentSpees(YotaTestSteps.java:104)\n\tat sun.reflect.GeneratedMethodAccessor24.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:733)\n\tat org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:346)\n\tat org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1088)\n\tat org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:953)\n\tat org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:1027)\n\tat org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:898)\n\tat org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:825)\n\tat org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:798)\n\tat org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:422)\n\tat org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:393)\n\tat org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:292)\n\tat org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:266)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)\n"
+  },
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "a22d61b8df0db0ca",
+    "name" : "ru/tieto/test/stories/yotaPanel.story",
+    "title" : "yotaPanel.story"
+  },
+  "steps" : [ {
+    "name" : "Given I see default current ｟8.5｠ of ｟Мбит/сек (макс.)｠",
+    "title" : "Given I see default current ｟8.5｠ of ｟Мбит/сек (макс.)｠",
+    "time" : {
+      "start" : 1488516682634,
+      "stop" : 1488516682669,
+      "duration" : 35
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "FAILED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "And I see default current ｟1150｠",
+    "title" : "And I see default current ｟1150｠",
+    "time" : {
+      "start" : 1488516682670,
+      "stop" : 1488516682670,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "CANCELED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "When I add ｟5000｠ of money",
+    "title" : "When I add ｟5000｠ of money",
+    "time" : {
+      "start" : 1488516682671,
+      "stop" : 1488516682671,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "CANCELED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "And I click top up balance",
+    "title" : "And I click top up balance",
+    "time" : {
+      "start" : 1488516682671,
+      "stop" : 1488516682671,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "CANCELED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "And I click increase button",
+    "title" : "And I click increase button",
+    "time" : {
+      "start" : 1488516682671,
+      "stop" : 1488516682671,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "CANCELED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "And I click connection button",
+    "title" : "And I click connection button",
+    "time" : {
+      "start" : 1488516682671,
+      "stop" : 1488516682671,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "CANCELED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Then I see current ｟9.2｠ of ｟Мбит/сек (макс.)｠",
+    "title" : "Then I see current ｟9.2｠ of ｟Мбит/сек (макс.)｠",
+    "time" : {
+      "start" : 1488516682671,
+      "stop" : 1488516682671,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "CANCELED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "And I see current ｟1200｠",
+    "title" : "And I see current ｟1200｠",
+    "time" : {
+      "start" : 1488516682672,
+      "stop" : 1488516682672,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "CANCELED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "framework",
+    "value" : "JBehave"
+  }, {
+    "name" : "suite-title",
+    "value" : "yotaPanel.story"
+  }, {
+    "name" : "host",
+    "value" : "tigra"
+  }, {
+    "name" : "thread",
+    "value" : "14455@tigra.pool-1-thread-1(11)"
+  }, {
+    "name" : "suite-name",
+    "value" : "ru/tieto/test/stories/yotaPanel.story"
+  } ],
+  "parameters" : [ ]
+}
