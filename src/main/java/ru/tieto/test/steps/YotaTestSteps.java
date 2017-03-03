@@ -1,8 +1,9 @@
 package ru.tieto.test.steps;
 
 import org.jbehave.core.annotations.*;
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import ru.tieto.test.Pages.YotaPage;
 import ru.yandex.qatools.allure.annotations.Step;
@@ -27,11 +28,11 @@ public class YotaTestSteps {
     @Step("I am a pending step")
     public void setup(){
         String url = "http://localhost:4567/index.html";
-        System.setProperty("webdriver.gecko.driver", "./geckodriver");
-        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+        System.setProperty("webdriver.chrome.driver", "./chromedriver");
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
         capabilities.setCapability("marionette", true);
-        driver = new FirefoxDriver();
-        driver.get(url);
+        yotaPage = new YotaPage( new ChromeDriver() );
+        yotaPage.open(url);
     }
 
     @Given("I see that new speed is <defaultNewNumber> of <defaultNewSpeed>")
@@ -49,7 +50,7 @@ public class YotaTestSteps {
 
     @When("I click increase button")
     @Step("Increase slider")
-    public void increaseSlider(){
+    public void increaseSlider() {
         yotaPage.increaseSlider();
     }
 
@@ -147,8 +148,23 @@ public class YotaTestSteps {
 
     @AfterStory
     public void closeWindow(){
-        driver.close();
+        yotaPage.close();
     }
 
 
+    @Test
+    public void test() throws InterruptedException {
+        String url = "http://localhost:4567/index.html";
+        System.setProperty("webdriver.chrome.driver", "./chromedriver");
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        capabilities.setCapability("marionette", true);
+        yotaPage = new YotaPage( new ChromeDriver() );
+        yotaPage.open(url);
+        yotaPage.increaseSlider();
+        yotaPage.increaseSlider();
+        yotaPage.increaseSlider();
+        yotaPage.decreaseSlider();
+        yotaPage.decreaseSlider();
+        yotaPage.decreaseSlider();
+    }
 }
