@@ -3,6 +3,7 @@ Scenario: check increase balance
 Given I see that balance is <defaultBalance>
 When I add <payNumber> of money
 And I click top up balance
+And I wait changes
 Then I see that balance is <balance>
 
 Examples:

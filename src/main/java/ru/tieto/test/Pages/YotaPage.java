@@ -14,19 +14,19 @@ public class YotaPage {
     /*
     Define page elements
      */
-    private By decreaseSlider       = By.xpath("/html/body/div/div[2]/div[2]/div[2]/a");
-    private By increaseSlider       = By.xpath("/html/body/div/div[2]/div[2]/div[5]/a");
+    private By decreaseSlider       = By.xpath("//div[@class='decrease']/a");
+    private By increaseSlider       = By.xpath("//div[@class='increase']/a");
     private By newNumberOfSpeed     = By.xpath("/html/body/div/div[2]/div[3]/div[2]/div/div/div/div[2]/strong");
     private By newSpeed             = By.xpath("/html/body/div/div[2]/div[3]/div[2]/div/div/div/div[2]/span");
-    private By newPrice             = By.xpath("/html/body/div/div[2]/div[3]/div[2]/div/div/div/div[3]/strong");
+    private By newPrice             = By.xpath("//div[@class='cost']/strong");
     private By currentNumberOfSpeed = By.xpath("/html/body/div/div[2]/div[1]/div/div[2]/div/div/div[2]/strong");
     private By currentSpeed         = By.xpath("/html/body/div/div[2]/div[1]/div/div[2]/div/div/div[2]/span");
-    private By currentPrice         = By.xpath("/html/body/div/div[2]/div[1]/div/div[2]/div/div/div[3]/strong");
-    private By connectionButton     = By.xpath("/html/body/div/div[2]/div[3]/div[2]/div/div/div/a");
-    private By balance              = By.xpath("/html/body/div/div[1]/div/dl/dd/span");
-    private By topUpAmount          = By.xpath("/html/body/div/div[1]/div/div/div[1]/div[1]/div[1]/input");
-    private By doPayment            = By.xpath("/html/body/div/div[1]/div/div/div[1]/div[2]/a[1]");
-    private By doReset              = By.xpath("/html/body/div/div[1]/div/div/div[1]/div[2]/a[2]");
+    private By currentPrice         = By.xpath("//div[@class='cost no-arrow']/strong");
+    private By connectionButton     = By.linkText("Подключить");
+    private By balance              = By.xpath("//dd[@id='balance-holder']/span");
+    private By topUpAmount          = By.id("amount");
+    private By doPayment            = By.linkText("Пополнить счет");
+    private By doReset              = By.linkText("Сброс");
 
     private final WebDriver driver;
 

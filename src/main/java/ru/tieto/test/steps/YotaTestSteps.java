@@ -1,25 +1,21 @@
 package ru.tieto.test.steps;
 
 import org.jbehave.core.annotations.*;
-import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import ru.tieto.test.Pages.YotaPage;
 import ru.yandex.qatools.allure.annotations.Step;
 
-import java.io.File;
 import java.io.IOException;
 
 public class YotaTestSteps {
 
+    Process process;
     YotaPage yotaPage;
 
     @BeforeStories
     public void startProject() throws IOException, InterruptedException {
-        ProcessBuilder processBuilder = new ProcessBuilder("java", "-jar", "test-slider-1.0.0-SNAPSHOT.jar");
-        processBuilder.directory(new File("./"));
-        processBuilder.start();
-//        Thread.sleep(5000);
+        process = Runtime.getRuntime().exec("java -jar ./test-slider-1.0.0-SNAPSHOT.jar");
     }
 
     @BeforeStory
@@ -152,19 +148,15 @@ public class YotaTestSteps {
         yotaPage.close();
     }
 
-    @Test
-    public void test() throws InterruptedException {
-        String url = "http://localhost:4567/index.html";
-        System.setProperty("webdriver.chrome.driver", "./chromedriver");
-        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-        capabilities.setCapability("marionette", true);
-        yotaPage = new YotaPage( new ChromeDriver() );
-        yotaPage.open(url);
-        yotaPage.increaseSlider();
-        yotaPage.increaseSlider();
-        yotaPage.increaseSlider();
-        yotaPage.setBalance("50000");
-        yotaPage.doPayment();
-        yotaPage.doReset();
+    @AfterStories
+    public void closeConnection(){
+        process.destroy();
+        boolean isDebug = java.lang.management.ManagementFactory.getRuntimeMXBean().getInputArguments().toString().indexOf("-agentlib:jdwp") > 0;
+        try {
+            if (isDebug)
+                Runtime.getRuntime().exec("taskkill /F /IM chromedriver");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
