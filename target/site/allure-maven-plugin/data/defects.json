@@ -3,37 +3,37 @@
     "title" : "Product defects",
     "status" : "FAILED",
     "defects" : [ {
-      "uid" : "91c86ee27500aca7",
+      "uid" : "713f9455be692374",
       "failure" : {
-        "message" : "AssertionError: Текущий баланс несоответствует ожидаемому значению: ожидаем - 1500.5, получили - 1000.5",
-        "stackTrace" : "java.lang.AssertionError: Текущий баланс несоответствует ожидаемому значению: ожидаем - 1500.5, получили - 1000.5\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat ru.tieto.test.Pages.YotaPage.getBalance(YotaPage.java:111)\n\tat ru.tieto.test.steps.YotaTestSteps.checkBalance(YotaTestSteps.java:78)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:733)\n\tat org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:346)\n\tat org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1088)\n\tat org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:953)\n\tat org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:1027)\n\tat org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:898)\n\tat org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:825)\n\tat org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:798)\n\tat org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:422)\n\tat org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:393)\n\tat org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:292)\n\tat org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:266)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)\n"
+        "message" : "AssertionError: Текущий баланс несоответствует ожидаемому значению: ожидаем - 10000001500.5, получили - 10000001000.5",
+        "stackTrace" : "java.lang.AssertionError: Текущий баланс несоответствует ожидаемому значению: ожидаем - 10000001500.5, получили - 10000001000.5\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat ru.tieto.test.Pages.YotaPage.getBalance(YotaPage.java:111)\n\tat ru.tieto.test.steps.YotaTestSteps.checkBalance(YotaTestSteps.java:78)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:733)\n\tat org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:346)\n\tat org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1088)\n\tat org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:953)\n\tat org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:1027)\n\tat org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:898)\n\tat org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:825)\n\tat org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:798)\n\tat org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:422)\n\tat org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:393)\n\tat org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:292)\n\tat org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:266)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)\n"
       },
       "testCases" : [ {
-        "uid" : "da2975f76b7138ac",
-        "name" : "check that I can not input number of money less than zero {payNumber=-500, balance=1500.5}",
-        "title" : "check that I can not input number of money less than zero {payNumber=-500, balance=1500.5}",
+        "uid" : "eefd585bd02bd6ca",
+        "name" : "check that I can not input number of money less than zero {payNumber=-500, balance=10000001500.5}",
+        "title" : "check that I can not input number of money less than zero {payNumber=-500, balance=10000001500.5}",
         "time" : {
-          "start" : 1488745696951,
-          "stop" : 1488745698766,
-          "duration" : 1815
+          "start" : 1488755999088,
+          "stop" : 1488756000896,
+          "duration" : 1808
         },
         "severity" : "NORMAL",
         "status" : "FAILED"
       } ]
     }, {
-      "uid" : "135f46be7cd11ff5",
+      "uid" : "a2a0121814881095",
       "failure" : {
         "message" : "AssertionError: Баланс стал отрицательным",
         "stackTrace" : "java.lang.AssertionError: Баланс стал отрицательным\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat ru.tieto.test.Pages.YotaPage.checkThatBalanceAboveZero(YotaPage.java:140)\n\tat ru.tieto.test.steps.YotaTestSteps.checkThatBalanceAboveZero(YotaTestSteps.java:122)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:733)\n\tat org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:346)\n\tat org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1088)\n\tat org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:953)\n\tat org.jbehave.core.embedder.PerformableTree$ExamplePerformableScenario.perform(PerformableTree.java:1027)\n\tat org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:898)\n\tat org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:825)\n\tat org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:798)\n\tat org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:422)\n\tat org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:393)\n\tat org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:292)\n\tat org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:266)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)\n"
       },
       "testCases" : [ {
-        "uid" : "9c0d259d0ed127a5",
+        "uid" : "9a667fecb06cfae",
         "name" : "check that balance can not be less than zero {payNumber=-500}",
         "title" : "check that balance can not be less than zero {payNumber=-500}",
         "time" : {
-          "start" : 1488745698766,
-          "stop" : 1488745700816,
-          "duration" : 2050
+          "start" : 1488756000897,
+          "stop" : 1488756004365,
+          "duration" : 3468
         },
         "severity" : "NORMAL",
         "status" : "FAILED"

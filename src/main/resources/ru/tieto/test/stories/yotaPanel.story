@@ -7,10 +7,11 @@ And I wait changes
 Then I see that balance is <balance>
 
 Examples:
-| payNumber |   balance  |
-|    500    |    500     |
-|    1000   |    1500    |
-|    0.5    |    1500.5  |
+| payNumber |   balance   |
+|    500    |    500      |
+|    1000   |    1500     |
+|    0.5    |    1500.5   |
+|10000000000|10000001500.5|
 
 
 Scenario: check that I can not input number of money less than zero
@@ -22,14 +23,15 @@ And I wait changes
 Then I see that balance is <balance>
 
 Examples:
-| payNumber |   balance  |
-|    -500   |    1500.5  |
+| payNumber |   balance   |
+|    -500   |10000001500.5|
 
 
 Scenario: check that balance can not be less than zero
 
 Given I am on yota page
 When I click reset button
+And I wait changes
 And I add <payNumber> of money
 And I click top up balance
 And I wait changes
