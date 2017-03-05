@@ -35,19 +35,6 @@ public class YotaTestSteps {
         yotaPage.checkPage();
     }
 
-    @Given("I see that new speed is <defaultNewNumber> of <defaultNewSpeed>")
-    @Step("start with show new speed")
-    public void checkDefaultNewSpeed(@Named("defaultNewNumber") String number, @Named("defaultNewSpeed") String speed) {
-        yotaPage.checkNewNumberOfSpeed(number);
-        yotaPage.checkNewSpeed(speed);
-    }
-
-    @Given("I see that new price is <defaultNewPrice>")
-    @Step("start with show new price")
-    public void checkDefaultNewPrice(@Named("defaultNewPrice") String price) {
-        yotaPage.checkNewPrice(price);
-    }
-
     @When("I click increase button")
     @Step("Increase slider")
     public void increaseSlider() {
@@ -73,12 +60,6 @@ public class YotaTestSteps {
         yotaPage.decreaseSlider();
     }
 
-    @Given("I see that balance is <defaultBalance>")
-    @Step("check default balance")
-    public void checkDefaultBalance(@Named("defaultBalance") String defaultBalance){
-        yotaPage.getBalance(defaultBalance);
-    }
-
     @When("I add <payNumber> of money")
     @Step("Input money")
     public void inputMoney(@Named("payNumber") String number){
@@ -95,19 +76,6 @@ public class YotaTestSteps {
     @Step("Check balance")
     public void checkBalance(@Named("balance") String balance){
         yotaPage.getBalance(balance);
-    }
-
-    @Given("I see default current <defaultCurNumber> of <defaultCurSpeed>")
-    @Step("Default current conditions of speed")
-    public void checkDefaultCurrentSpees(@Named("defaultCurNumber") String defaultNumber, @Named("defaultCurSpeed") String defaultSpeed) {
-        yotaPage.checkCurrentNumberOfSpeed(defaultNumber);
-        yotaPage.checkCurrentSpeed(defaultSpeed);
-    }
-
-    @Given("I see default current <defaultCurPrice>")
-    @Step("Default current conditions of price")
-    public void checkDefaultPrice(@Named("defaultCurPrice") String defaultPrice) {
-        yotaPage.checkCurrentPrice(defaultPrice);
     }
 
     @When("I click connection button")

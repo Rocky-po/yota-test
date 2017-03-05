@@ -3,16 +3,16 @@
   "data" : [ {
     "statistic" : {
       "total" : 79,
-      "passed" : 76,
+      "passed" : 77,
       "pending" : 0,
       "canceled" : 0,
-      "failed" : 3,
+      "failed" : 2,
       "broken" : 0
     },
     "time" : {
-      "start" : 1488744221963,
-      "stop" : 1488744303926,
-      "duration" : 81963
+      "start" : 1488745691224,
+      "stop" : 1488745767359,
+      "duration" : 76135
     },
     "name" : "total",
     "type" : "TOTAL"
@@ -20,12 +20,12 @@
     "name" : "defects",
     "type" : "DEFECTS",
     "data" : [ {
-      "count" : 2,
+      "count" : 1,
       "message" : "AssertionError: Текущий баланс несоответствует ожидаемому значению: ожидаем - 1500.5, получили - 1000.5",
       "status" : "FAILED"
     }, {
       "count" : 1,
-      "message" : "AssertionError: Текущий баланс несоответствует ожидаемому значению: ожидаем - 0, получили - 4650",
+      "message" : "AssertionError: Баланс стал отрицательным",
       "status" : "FAILED"
     } ]
   }, {
@@ -35,10 +35,10 @@
       "title" : "yotaPanel.story",
       "statistic" : {
         "total" : 33,
-        "passed" : 30,
+        "passed" : 31,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 3,
+        "failed" : 2,
         "broken" : 0
       }
     }, {
@@ -59,10 +59,10 @@
       "title" : "Without feature",
       "statistic" : {
         "total" : 79,
-        "passed" : 76,
+        "passed" : 77,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 3,
+        "failed" : 2,
         "broken" : 0
       }
     } ]

@@ -3,889 +3,889 @@
     "title" : "Without feature",
     "statistic" : {
       "total" : 79,
-      "passed" : 76,
+      "passed" : 77,
       "pending" : 0,
       "canceled" : 0,
-      "failed" : 3,
+      "failed" : 2,
       "broken" : 0
     },
     "stories" : [ {
-      "uid" : "e6009150c6cc0535",
+      "uid" : "2db352626bda0f85",
       "title" : "Without story",
       "statistic" : {
         "total" : 79,
-        "passed" : 76,
+        "passed" : 77,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 3,
+        "failed" : 2,
         "broken" : 0
       },
       "testCases" : [ {
-        "uid" : "ff0f0762bfd7ebf4",
-        "name" : "check increase balance {defaultBalance=0, payNumber=500, balance=500}",
-        "title" : "check increase balance {defaultBalance=0, payNumber=500, balance=500}",
+        "uid" : "8fab8ac413d072e6",
+        "name" : "check increase balance {payNumber=500, balance=500}",
+        "title" : "check increase balance {payNumber=500, balance=500}",
         "time" : {
-          "start" : 1488744221963,
-          "stop" : 1488744224122,
-          "duration" : 2159
+          "start" : 1488745691224,
+          "stop" : 1488745693344,
+          "duration" : 2120
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "596823cebf04f859",
-        "name" : "check increase balance {defaultBalance=500, payNumber=1000, balance=1500}",
-        "title" : "check increase balance {defaultBalance=500, payNumber=1000, balance=1500}",
+        "uid" : "893d0982bf417cae",
+        "name" : "check increase balance {payNumber=1000, balance=1500}",
+        "title" : "check increase balance {payNumber=1000, balance=1500}",
         "time" : {
-          "start" : 1488744224132,
-          "stop" : 1488744225967,
-          "duration" : 1835
+          "start" : 1488745693352,
+          "stop" : 1488745695154,
+          "duration" : 1802
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "cb242faefa5f0e60",
-        "name" : "check increase balance {defaultBalance=1500, payNumber=0.5, balance=1500.5}",
-        "title" : "check increase balance {defaultBalance=1500, payNumber=0.5, balance=1500.5}",
+        "uid" : "442be53c3d95a6d8",
+        "name" : "check increase balance {payNumber=0.5, balance=1500.5}",
+        "title" : "check increase balance {payNumber=0.5, balance=1500.5}",
         "time" : {
-          "start" : 1488744225970,
-          "stop" : 1488744227794,
-          "duration" : 1824
+          "start" : 1488745695156,
+          "stop" : 1488745696948,
+          "duration" : 1792
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "323b7d6e02e4307a",
-        "name" : "check that I can not input number of money less than zero {defaultBalance=1500.5, payNumber=-500, balance=1500.5}",
-        "title" : "check that I can not input number of money less than zero {defaultBalance=1500.5, payNumber=-500, balance=1500.5}",
+        "uid" : "da2975f76b7138ac",
+        "name" : "check that I can not input number of money less than zero {payNumber=-500, balance=1500.5}",
+        "title" : "check that I can not input number of money less than zero {payNumber=-500, balance=1500.5}",
         "time" : {
-          "start" : 1488744227798,
-          "stop" : 1488744229621,
-          "duration" : 1823
-        },
-        "severity" : "NORMAL",
-        "status" : "FAILED"
-      }, {
-        "uid" : "859862b178e0cfa2",
-        "name" : "check that balance can not be less than zero {defaultBalance=1500.5, payNumber=-500}",
-        "title" : "check that balance can not be less than zero {defaultBalance=1500.5, payNumber=-500}",
-        "time" : {
-          "start" : 1488744229621,
-          "stop" : 1488744229668,
-          "duration" : 47
+          "start" : 1488745696951,
+          "stop" : 1488745698766,
+          "duration" : 1815
         },
         "severity" : "NORMAL",
         "status" : "FAILED"
       }, {
-        "uid" : "7bffce98131f671c",
-        "name" : "check that to click button reset do reset all characters {defaultCurNumber=64, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=0, payNumber=500, balance=0, curNumber=64, curSpeed=Кбит/сек (макс.), curPrice=0, newNumber=64, newSpeed=Кбит/сек (макс.), newPrice=0}",
-        "title" : "check that to click button reset do reset all characters {defaultCurNumber=64, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=0, payNumber=500, balance=0, curNumber=64, curSpeed=Кбит/сек (макс.), curPrice=0, newNumber=64, newSpeed=Кбит/сек (макс.), newPrice=0}",
+        "uid" : "9c0d259d0ed127a5",
+        "name" : "check that balance can not be less than zero {payNumber=-500}",
+        "title" : "check that balance can not be less than zero {payNumber=-500}",
         "time" : {
-          "start" : 1488744229668,
-          "stop" : 1488744232866,
-          "duration" : 3198
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "5c6ee88d85494aca",
-        "name" : "check that I can't connect new conditions when I have not enough money {defaultCurNumber=64, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=0, payNumber=300}",
-        "title" : "check that I can't connect new conditions when I have not enough money {defaultCurNumber=64, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=0, payNumber=300}",
-        "time" : {
-          "start" : 1488744232868,
-          "stop" : 1488744234938,
-          "duration" : 2070
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "85fee7504be03f17",
-        "name" : "check that I can't connect new conditions when I have same condition {defaultCurNumber=64, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=0, payNumber=5000, curNumber=416, curSpeed=Кбит/сек (макс.), curPrice=350}",
-        "title" : "check that I can't connect new conditions when I have same condition {defaultCurNumber=64, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=0, payNumber=5000, curNumber=416, curSpeed=Кбит/сек (макс.), curPrice=350}",
-        "time" : {
-          "start" : 1488744234939,
-          "stop" : 1488744236245,
-          "duration" : 1306
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "27595914e30aabcd",
-        "name" : "check that when I have enough money and I have another condition button connection is active {defaultBalance=0, payNumber=5000}",
-        "title" : "check that when I have enough money and I have another condition button connection is active {defaultBalance=0, payNumber=5000}",
-        "time" : {
-          "start" : 1488744236247,
-          "stop" : 1488744236298,
-          "duration" : 51
+          "start" : 1488745698766,
+          "stop" : 1488745700816,
+          "duration" : 2050
         },
         "severity" : "NORMAL",
         "status" : "FAILED"
       }, {
-        "uid" : "26f9bc254ea46215",
-        "name" : "check that I can connect new conditions {defaultCurNumber=64, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=0, payNumber=5000, curNumber=416, curSpeed=Кбит/сек (макс.), curPrice=350}",
-        "title" : "check that I can connect new conditions {defaultCurNumber=64, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=0, payNumber=5000, curNumber=416, curSpeed=Кбит/сек (макс.), curPrice=350}",
+        "uid" : "4039153fac0ef1d",
+        "name" : "check that to click button reset do reset all characters {payNumber=500, balance=0, curNumber=64, curSpeed=Кбит/сек (макс.), curPrice=0, newNumber=64, newSpeed=Кбит/сек (макс.), newPrice=0}",
+        "title" : "check that to click button reset do reset all characters {payNumber=500, balance=0, curNumber=64, curSpeed=Кбит/сек (макс.), curPrice=0, newNumber=64, newSpeed=Кбит/сек (макс.), newPrice=0}",
         "time" : {
-          "start" : 1488744236299,
-          "stop" : 1488744237210,
-          "duration" : 911
+          "start" : 1488745700816,
+          "stop" : 1488745703724,
+          "duration" : 2908
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "bd3d922d0ac6473e",
-        "name" : "check that I can connect all conditions {defaultCurNumber=64, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=0, payNumber=5000, curNumber=320, curSpeed=Кбит/сек (макс.), curPrice=300}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=64, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=0, payNumber=5000, curNumber=320, curSpeed=Кбит/сек (макс.), curPrice=300}",
+        "uid" : "9e84f7ad83fc9b7f",
+        "name" : "check that I can't connect new conditions when I have not enough money {defaultCurPrice=0, payNumber=300}",
+        "title" : "check that I can't connect new conditions when I have not enough money {defaultCurPrice=0, payNumber=300}",
         "time" : {
-          "start" : 1488744237212,
-          "stop" : 1488744239480,
-          "duration" : 2268
+          "start" : 1488745703726,
+          "stop" : 1488745705668,
+          "duration" : 1942
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "5aee00f8adfc5ce7",
-        "name" : "check that I can connect all conditions {defaultCurNumber=320, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=300, payNumber=5000, curNumber=416, curSpeed=Кбит/сек (макс.), curPrice=350}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=320, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=300, payNumber=5000, curNumber=416, curSpeed=Кбит/сек (макс.), curPrice=350}",
+        "uid" : "e10fe14fca73dd73",
+        "name" : "check that I can't connect new conditions when I have same condition {payNumber=5000, curNumber=416, curSpeed=Кбит/сек (макс.), curPrice=350}",
+        "title" : "check that I can't connect new conditions when I have same condition {payNumber=5000, curNumber=416, curSpeed=Кбит/сек (макс.), curPrice=350}",
         "time" : {
-          "start" : 1488744239481,
-          "stop" : 1488744241594,
-          "duration" : 2113
+          "start" : 1488745705670,
+          "stop" : 1488745706863,
+          "duration" : 1193
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "e281256369b20445",
-        "name" : "check that I can connect all conditions {defaultCurNumber=416, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=350, payNumber=5000, curNumber=512, curSpeed=Кбит/сек (макс.), curPrice=400}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=416, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=350, payNumber=5000, curNumber=512, curSpeed=Кбит/сек (макс.), curPrice=400}",
+        "uid" : "54f5ffa5c04a6529",
+        "name" : "check that when I have enough money and I have another condition button connection is active {payNumber=5000}",
+        "title" : "check that when I have enough money and I have another condition button connection is active {payNumber=5000}",
         "time" : {
-          "start" : 1488744241595,
-          "stop" : 1488744243713,
-          "duration" : 2118
+          "start" : 1488745706865,
+          "stop" : 1488745707388,
+          "duration" : 523
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "70ba922e9bbf7b9b",
-        "name" : "check that I can connect all conditions {defaultCurNumber=512, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=400, payNumber=5000, curNumber=640, curSpeed=Кбит/сек (макс.), curPrice=450}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=512, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=400, payNumber=5000, curNumber=640, curSpeed=Кбит/сек (макс.), curPrice=450}",
+        "uid" : "8588f361ae8cad09",
+        "name" : "check that I can connect new conditions {payNumber=5000, curNumber=416, curSpeed=Кбит/сек (макс.), curPrice=350}",
+        "title" : "check that I can connect new conditions {payNumber=5000, curNumber=416, curSpeed=Кбит/сек (макс.), curPrice=350}",
         "time" : {
-          "start" : 1488744243715,
-          "stop" : 1488744245862,
-          "duration" : 2147
+          "start" : 1488745707390,
+          "stop" : 1488745708146,
+          "duration" : 756
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "45f5fde9f4c16def",
-        "name" : "check that I can connect all conditions {defaultCurNumber=640, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=450, payNumber=5000, curNumber=768, curSpeed=Кбит/сек (макс.), curPrice=500}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=640, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=450, payNumber=5000, curNumber=768, curSpeed=Кбит/сек (макс.), curPrice=500}",
+        "uid" : "ceb2aa8d131bad4e",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=320, curSpeed=Кбит/сек (макс.), curPrice=300}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=320, curSpeed=Кбит/сек (макс.), curPrice=300}",
         "time" : {
-          "start" : 1488744245863,
-          "stop" : 1488744248002,
-          "duration" : 2139
+          "start" : 1488745708148,
+          "stop" : 1488745710252,
+          "duration" : 2104
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "a92445c7700d5555",
-        "name" : "check that I can connect all conditions {defaultCurNumber=768, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=500, payNumber=5000, curNumber=896, curSpeed=Кбит/сек (макс.), curPrice=550}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=768, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=500, payNumber=5000, curNumber=896, curSpeed=Кбит/сек (макс.), curPrice=550}",
+        "uid" : "782f1d60bc6e81e4",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=416, curSpeed=Кбит/сек (макс.), curPrice=350}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=416, curSpeed=Кбит/сек (макс.), curPrice=350}",
         "time" : {
-          "start" : 1488744248003,
-          "stop" : 1488744250134,
-          "duration" : 2131
+          "start" : 1488745710254,
+          "stop" : 1488745712294,
+          "duration" : 2040
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "9b972a69dc0d44fc",
-        "name" : "check that I can connect all conditions {defaultCurNumber=896, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=550, payNumber=5000, curNumber=1.0, curSpeed=Мбит/сек (макс.), curPrice=600}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=896, defaultCurSpeed=Кбит/сек (макс.), defaultCurPrice=550, payNumber=5000, curNumber=1.0, curSpeed=Мбит/сек (макс.), curPrice=600}",
+        "uid" : "952cb3b86c2c0b3b",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=512, curSpeed=Кбит/сек (макс.), curPrice=400}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=512, curSpeed=Кбит/сек (макс.), curPrice=400}",
         "time" : {
-          "start" : 1488744250136,
-          "stop" : 1488744252255,
-          "duration" : 2119
+          "start" : 1488745712295,
+          "stop" : 1488745714314,
+          "duration" : 2019
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "9fe7475c46850d5e",
-        "name" : "check that I can connect all conditions {defaultCurNumber=1.0, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=600, payNumber=5000, curNumber=1.3, curSpeed=Мбит/сек (макс.), curPrice=650}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=1.0, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=600, payNumber=5000, curNumber=1.3, curSpeed=Мбит/сек (макс.), curPrice=650}",
+        "uid" : "71ce942ed1b9a719",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=640, curSpeed=Кбит/сек (макс.), curPrice=450}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=640, curSpeed=Кбит/сек (макс.), curPrice=450}",
         "time" : {
-          "start" : 1488744252256,
-          "stop" : 1488744254375,
-          "duration" : 2119
+          "start" : 1488745714315,
+          "stop" : 1488745716316,
+          "duration" : 2001
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "23c02e9f8b7135a3",
-        "name" : "check that I can connect all conditions {defaultCurNumber=1.3, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=650, payNumber=5000, curNumber=1.7, curSpeed=Мбит/сек (макс.), curPrice=700}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=1.3, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=650, payNumber=5000, curNumber=1.7, curSpeed=Мбит/сек (макс.), curPrice=700}",
+        "uid" : "4c08d3383eab7472",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=768, curSpeed=Кбит/сек (макс.), curPrice=500}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=768, curSpeed=Кбит/сек (макс.), curPrice=500}",
         "time" : {
-          "start" : 1488744254377,
-          "stop" : 1488744256483,
-          "duration" : 2106
+          "start" : 1488745716317,
+          "stop" : 1488745718329,
+          "duration" : 2012
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "c91664e67f86e1e8",
-        "name" : "check that I can connect all conditions {defaultCurNumber=1.7, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=700, payNumber=5000, curNumber=2.1, curSpeed=Мбит/сек (макс.), curPrice=750}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=1.7, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=700, payNumber=5000, curNumber=2.1, curSpeed=Мбит/сек (макс.), curPrice=750}",
+        "uid" : "e31fd3b9acbfcb80",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=896, curSpeed=Кбит/сек (макс.), curPrice=550}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=896, curSpeed=Кбит/сек (макс.), curPrice=550}",
         "time" : {
-          "start" : 1488744256484,
-          "stop" : 1488744258779,
-          "duration" : 2295
+          "start" : 1488745718330,
+          "stop" : 1488745720331,
+          "duration" : 2001
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "3edb99cd5e243a97",
-        "name" : "check that I can connect all conditions {defaultCurNumber=2.1, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=750, payNumber=5000, curNumber=3.1, curSpeed=Мбит/сек (макс.), curPrice=800}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=2.1, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=750, payNumber=5000, curNumber=3.1, curSpeed=Мбит/сек (макс.), curPrice=800}",
+        "uid" : "f8789de97b3f8749",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=1.0, curSpeed=Мбит/сек (макс.), curPrice=600}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=1.0, curSpeed=Мбит/сек (макс.), curPrice=600}",
         "time" : {
-          "start" : 1488744258781,
-          "stop" : 1488744260881,
-          "duration" : 2100
+          "start" : 1488745720333,
+          "stop" : 1488745722327,
+          "duration" : 1994
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "5be30f2ec5cb12d9",
-        "name" : "check that I can connect all conditions {defaultCurNumber=3.1, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=800, payNumber=5000, curNumber=4.1, curSpeed=Мбит/сек (макс.), curPrice=850}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=3.1, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=800, payNumber=5000, curNumber=4.1, curSpeed=Мбит/сек (макс.), curPrice=850}",
+        "uid" : "2748a075e63226e",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=1.3, curSpeed=Мбит/сек (макс.), curPrice=650}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=1.3, curSpeed=Мбит/сек (макс.), curPrice=650}",
         "time" : {
-          "start" : 1488744260882,
-          "stop" : 1488744263010,
-          "duration" : 2128
+          "start" : 1488745722329,
+          "stop" : 1488745724351,
+          "duration" : 2022
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "1a6a8a22ffb7f909",
-        "name" : "check that I can connect all conditions {defaultCurNumber=4.1, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=850, payNumber=5000, curNumber=5.0, curSpeed=Мбит/сек (макс.), curPrice=900}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=4.1, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=850, payNumber=5000, curNumber=5.0, curSpeed=Мбит/сек (макс.), curPrice=900}",
+        "uid" : "3439cee3b66842d5",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=1.7, curSpeed=Мбит/сек (макс.), curPrice=700}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=1.7, curSpeed=Мбит/сек (макс.), curPrice=700}",
         "time" : {
-          "start" : 1488744263012,
-          "stop" : 1488744265153,
-          "duration" : 2141
+          "start" : 1488745724352,
+          "stop" : 1488745726388,
+          "duration" : 2036
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "2a1b7681685c4e41",
-        "name" : "check that I can connect all conditions {defaultCurNumber=5.0, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=900, payNumber=5000, curNumber=5.7, curSpeed=Мбит/сек (макс.), curPrice=950}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=5.0, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=900, payNumber=5000, curNumber=5.7, curSpeed=Мбит/сек (макс.), curPrice=950}",
+        "uid" : "8a09b94383111df9",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=2.1, curSpeed=Мбит/сек (макс.), curPrice=750}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=2.1, curSpeed=Мбит/сек (макс.), curPrice=750}",
         "time" : {
-          "start" : 1488744265154,
-          "stop" : 1488744267308,
-          "duration" : 2154
+          "start" : 1488745726389,
+          "stop" : 1488745728391,
+          "duration" : 2002
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "1eae44fbece4245b",
-        "name" : "check that I can connect all conditions {defaultCurNumber=5.7, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=950, payNumber=5000, curNumber=6.4, curSpeed=Мбит/сек (макс.), curPrice=1000}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=5.7, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=950, payNumber=5000, curNumber=6.4, curSpeed=Мбит/сек (макс.), curPrice=1000}",
+        "uid" : "3f07e235d1ed9d81",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=3.1, curSpeed=Мбит/сек (макс.), curPrice=800}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=3.1, curSpeed=Мбит/сек (макс.), curPrice=800}",
         "time" : {
-          "start" : 1488744267309,
-          "stop" : 1488744269420,
-          "duration" : 2111
+          "start" : 1488745728392,
+          "stop" : 1488745730399,
+          "duration" : 2007
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "f622e2583d48a211",
-        "name" : "check that I can connect all conditions {defaultCurNumber=6.4, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1000, payNumber=5000, curNumber=7.1, curSpeed=Мбит/сек (макс.), curPrice=1050}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=6.4, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1000, payNumber=5000, curNumber=7.1, curSpeed=Мбит/сек (макс.), curPrice=1050}",
+        "uid" : "61ec17aca7e89fc",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=4.1, curSpeed=Мбит/сек (макс.), curPrice=850}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=4.1, curSpeed=Мбит/сек (макс.), curPrice=850}",
         "time" : {
-          "start" : 1488744269421,
-          "stop" : 1488744271513,
-          "duration" : 2092
+          "start" : 1488745730401,
+          "stop" : 1488745732411,
+          "duration" : 2010
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "b94a999ed0bbcc3f",
-        "name" : "check that I can connect all conditions {defaultCurNumber=7.1, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1050, payNumber=5000, curNumber=7.8, curSpeed=Мбит/сек (макс.), curPrice=1100}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=7.1, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1050, payNumber=5000, curNumber=7.8, curSpeed=Мбит/сек (макс.), curPrice=1100}",
+        "uid" : "ae6148551e96fc6a",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=5.0, curSpeed=Мбит/сек (макс.), curPrice=900}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=5.0, curSpeed=Мбит/сек (макс.), curPrice=900}",
         "time" : {
-          "start" : 1488744271515,
-          "stop" : 1488744273610,
-          "duration" : 2095
+          "start" : 1488745732412,
+          "stop" : 1488745734654,
+          "duration" : 2242
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "1a77111adcd3cc4a",
-        "name" : "check that I can connect all conditions {defaultCurNumber=7.8, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1100, payNumber=5000, curNumber=8.5, curSpeed=Мбит/сек (макс.), curPrice=1150}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=7.8, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1100, payNumber=5000, curNumber=8.5, curSpeed=Мбит/сек (макс.), curPrice=1150}",
+        "uid" : "5e9c450fc0928321",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=5.7, curSpeed=Мбит/сек (макс.), curPrice=950}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=5.7, curSpeed=Мбит/сек (макс.), curPrice=950}",
         "time" : {
-          "start" : 1488744273611,
-          "stop" : 1488744275756,
-          "duration" : 2145
+          "start" : 1488745734655,
+          "stop" : 1488745736628,
+          "duration" : 1973
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "f1f3ca5bc8c9a3d",
-        "name" : "check that I can connect all conditions {defaultCurNumber=8.5, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1150, payNumber=5000, curNumber=9.2, curSpeed=Мбит/сек (макс.), curPrice=1200}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=8.5, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1150, payNumber=5000, curNumber=9.2, curSpeed=Мбит/сек (макс.), curPrice=1200}",
+        "uid" : "71c1a6450fae6966",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=6.4, curSpeed=Мбит/сек (макс.), curPrice=1000}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=6.4, curSpeed=Мбит/сек (макс.), curPrice=1000}",
         "time" : {
-          "start" : 1488744275757,
-          "stop" : 1488744277868,
-          "duration" : 2111
+          "start" : 1488745736630,
+          "stop" : 1488745738641,
+          "duration" : 2011
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "faed19f0b0cc7274",
-        "name" : "check that I can connect all conditions {defaultCurNumber=9.2, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1200, payNumber=5000, curNumber=10.0, curSpeed=Мбит/сек (макс.), curPrice=1250}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=9.2, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1200, payNumber=5000, curNumber=10.0, curSpeed=Мбит/сек (макс.), curPrice=1250}",
+        "uid" : "5a39cbeb80f3b62a",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=7.1, curSpeed=Мбит/сек (макс.), curPrice=1050}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=7.1, curSpeed=Мбит/сек (макс.), curPrice=1050}",
         "time" : {
-          "start" : 1488744277869,
-          "stop" : 1488744279975,
-          "duration" : 2106
+          "start" : 1488745738642,
+          "stop" : 1488745740639,
+          "duration" : 1997
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "73c3f737477958c5",
-        "name" : "check that I can connect all conditions {defaultCurNumber=10.0, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1250, payNumber=5000, curNumber=12.0, curSpeed=Мбит/сек (макс.), curPrice=1300}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=10.0, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1250, payNumber=5000, curNumber=12.0, curSpeed=Мбит/сек (макс.), curPrice=1300}",
+        "uid" : "62a8e7cb791bc027",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=7.8, curSpeed=Мбит/сек (макс.), curPrice=1100}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=7.8, curSpeed=Мбит/сек (макс.), curPrice=1100}",
         "time" : {
-          "start" : 1488744279976,
-          "stop" : 1488744282110,
-          "duration" : 2134
+          "start" : 1488745740640,
+          "stop" : 1488745742666,
+          "duration" : 2026
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "c6797b48063a9c5e",
-        "name" : "check that I can connect all conditions {defaultCurNumber=12.0, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1300, payNumber=5000, curNumber=15.0, curSpeed=Мбит/сек (макс.), curPrice=1350}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=12.0, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1300, payNumber=5000, curNumber=15.0, curSpeed=Мбит/сек (макс.), curPrice=1350}",
+        "uid" : "9918bb32e52b7bbc",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=8.5, curSpeed=Мбит/сек (макс.), curPrice=1150}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=8.5, curSpeed=Мбит/сек (макс.), curPrice=1150}",
         "time" : {
-          "start" : 1488744282111,
-          "stop" : 1488744284187,
-          "duration" : 2076
+          "start" : 1488745742667,
+          "stop" : 1488745744695,
+          "duration" : 2028
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "bc9e52fdb3a98a27",
-        "name" : "check that I can connect all conditions {defaultCurNumber=15.0, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1350, payNumber=5000, curNumber=Макс, curSpeed=Мбит/сек (макс.), curPrice=1400}",
-        "title" : "check that I can connect all conditions {defaultCurNumber=15.0, defaultCurSpeed=Мбит/сек (макс.), defaultCurPrice=1350, payNumber=5000, curNumber=Макс, curSpeed=Мбит/сек (макс.), curPrice=1400}",
+        "uid" : "59368806d696d09",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=9.2, curSpeed=Мбит/сек (макс.), curPrice=1200}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=9.2, curSpeed=Мбит/сек (макс.), curPrice=1200}",
         "time" : {
-          "start" : 1488744284188,
-          "stop" : 1488744286294,
-          "duration" : 2106
+          "start" : 1488745744696,
+          "stop" : 1488745746687,
+          "duration" : 1991
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "b6d72d2f9e9834ec",
-        "name" : "slider increase {defaultNewNumber=64, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=0, newNumber=320, newSpeed=Кбит/сек (макс.), newPrice=300}",
-        "title" : "slider increase {defaultNewNumber=64, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=0, newNumber=320, newSpeed=Кбит/сек (макс.), newPrice=300}",
+        "uid" : "c1b818e18a76c14d",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=10.0, curSpeed=Мбит/сек (макс.), curPrice=1250}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=10.0, curSpeed=Мбит/сек (макс.), curPrice=1250}",
         "time" : {
-          "start" : 1488744290838,
-          "stop" : 1488744291387,
-          "duration" : 549
+          "start" : 1488745746688,
+          "stop" : 1488745748664,
+          "duration" : 1976
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "9be879fb12f1dd06",
-        "name" : "slider increase {defaultNewNumber=320, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=300, newNumber=416, newSpeed=Кбит/сек (макс.), newPrice=350}",
-        "title" : "slider increase {defaultNewNumber=320, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=300, newNumber=416, newSpeed=Кбит/сек (макс.), newPrice=350}",
+        "uid" : "861d3193ab60e841",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=12.0, curSpeed=Мбит/сек (макс.), curPrice=1300}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=12.0, curSpeed=Мбит/сек (макс.), curPrice=1300}",
         "time" : {
-          "start" : 1488744291389,
-          "stop" : 1488744291679,
-          "duration" : 290
+          "start" : 1488745748665,
+          "stop" : 1488745750683,
+          "duration" : 2018
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "b2fcb7b3b3a960f7",
-        "name" : "slider increase {defaultNewNumber=416, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=350, newNumber=512, newSpeed=Кбит/сек (макс.), newPrice=400}",
-        "title" : "slider increase {defaultNewNumber=416, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=350, newNumber=512, newSpeed=Кбит/сек (макс.), newPrice=400}",
+        "uid" : "bfbf077492f5515",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=15.0, curSpeed=Мбит/сек (макс.), curPrice=1350}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=15.0, curSpeed=Мбит/сек (макс.), curPrice=1350}",
         "time" : {
-          "start" : 1488744291681,
-          "stop" : 1488744291955,
-          "duration" : 274
+          "start" : 1488745750684,
+          "stop" : 1488745752683,
+          "duration" : 1999
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "9d9333b3e006f8e",
-        "name" : "slider increase {defaultNewNumber=512, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=400, newNumber=640, newSpeed=Кбит/сек (макс.), newPrice=450}",
-        "title" : "slider increase {defaultNewNumber=512, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=400, newNumber=640, newSpeed=Кбит/сек (макс.), newPrice=450}",
+        "uid" : "48d727abec5af737",
+        "name" : "check that I can connect all conditions {payNumber=5000, curNumber=Макс, curSpeed=Мбит/сек (макс.), curPrice=1400}",
+        "title" : "check that I can connect all conditions {payNumber=5000, curNumber=Макс, curSpeed=Мбит/сек (макс.), curPrice=1400}",
         "time" : {
-          "start" : 1488744291956,
-          "stop" : 1488744292246,
-          "duration" : 290
+          "start" : 1488745752685,
+          "stop" : 1488745754676,
+          "duration" : 1991
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "b147b74d4d00b936",
-        "name" : "slider increase {defaultNewNumber=640, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=450, newNumber=768, newSpeed=Кбит/сек (макс.), newPrice=500}",
-        "title" : "slider increase {defaultNewNumber=640, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=450, newNumber=768, newSpeed=Кбит/сек (макс.), newPrice=500}",
+        "uid" : "91ced53298934fc9",
+        "name" : "slider increase {newNumber=320, newSpeed=Кбит/сек (макс.), newPrice=300}",
+        "title" : "slider increase {newNumber=320, newSpeed=Кбит/сек (макс.), newPrice=300}",
         "time" : {
-          "start" : 1488744292247,
-          "stop" : 1488744292532,
-          "duration" : 285
+          "start" : 1488745759094,
+          "stop" : 1488745759515,
+          "duration" : 421
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "628ce02dc59d72a3",
-        "name" : "slider increase {defaultNewNumber=768, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=500, newNumber=896, newSpeed=Кбит/сек (макс.), newPrice=550}",
-        "title" : "slider increase {defaultNewNumber=768, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=500, newNumber=896, newSpeed=Кбит/сек (макс.), newPrice=550}",
+        "uid" : "7cc8b28bb639ddc3",
+        "name" : "slider increase {newNumber=416, newSpeed=Кбит/сек (макс.), newPrice=350}",
+        "title" : "slider increase {newNumber=416, newSpeed=Кбит/сек (макс.), newPrice=350}",
         "time" : {
-          "start" : 1488744292533,
-          "stop" : 1488744292858,
-          "duration" : 325
+          "start" : 1488745759516,
+          "stop" : 1488745759698,
+          "duration" : 182
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "e8faf04454b9bf72",
-        "name" : "slider increase {defaultNewNumber=896, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=550, newNumber=1.0, newSpeed=Мбит/сек (макс.), newPrice=600}",
-        "title" : "slider increase {defaultNewNumber=896, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=550, newNumber=1.0, newSpeed=Мбит/сек (макс.), newPrice=600}",
+        "uid" : "dbb3b4e411f80981",
+        "name" : "slider increase {newNumber=512, newSpeed=Кбит/сек (макс.), newPrice=400}",
+        "title" : "slider increase {newNumber=512, newSpeed=Кбит/сек (макс.), newPrice=400}",
         "time" : {
-          "start" : 1488744292859,
-          "stop" : 1488744293153,
-          "duration" : 294
+          "start" : 1488745759699,
+          "stop" : 1488745759883,
+          "duration" : 184
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "c9fddeada6a540ce",
-        "name" : "slider increase {defaultNewNumber=1.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=600, newNumber=1.3, newSpeed=Мбит/сек (макс.), newPrice=650}",
-        "title" : "slider increase {defaultNewNumber=1.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=600, newNumber=1.3, newSpeed=Мбит/сек (макс.), newPrice=650}",
+        "uid" : "a5cffbf7be660889",
+        "name" : "slider increase {newNumber=640, newSpeed=Кбит/сек (макс.), newPrice=450}",
+        "title" : "slider increase {newNumber=640, newSpeed=Кбит/сек (макс.), newPrice=450}",
         "time" : {
-          "start" : 1488744293154,
-          "stop" : 1488744293470,
-          "duration" : 316
+          "start" : 1488745759884,
+          "stop" : 1488745760057,
+          "duration" : 173
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "197ae1d5e147477e",
-        "name" : "slider increase {defaultNewNumber=1.3, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=650, newNumber=1.7, newSpeed=Мбит/сек (макс.), newPrice=700}",
-        "title" : "slider increase {defaultNewNumber=1.3, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=650, newNumber=1.7, newSpeed=Мбит/сек (макс.), newPrice=700}",
+        "uid" : "b31937650836e1c6",
+        "name" : "slider increase {newNumber=768, newSpeed=Кбит/сек (макс.), newPrice=500}",
+        "title" : "slider increase {newNumber=768, newSpeed=Кбит/сек (макс.), newPrice=500}",
         "time" : {
-          "start" : 1488744293471,
-          "stop" : 1488744293783,
-          "duration" : 312
+          "start" : 1488745760058,
+          "stop" : 1488745760237,
+          "duration" : 179
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "f37b2c52dd70354a",
-        "name" : "slider increase {defaultNewNumber=1.7, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=700, newNumber=2.1, newSpeed=Мбит/сек (макс.), newPrice=750}",
-        "title" : "slider increase {defaultNewNumber=1.7, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=700, newNumber=2.1, newSpeed=Мбит/сек (макс.), newPrice=750}",
+        "uid" : "7c1a3ec88724a058",
+        "name" : "slider increase {newNumber=896, newSpeed=Кбит/сек (макс.), newPrice=550}",
+        "title" : "slider increase {newNumber=896, newSpeed=Кбит/сек (макс.), newPrice=550}",
         "time" : {
-          "start" : 1488744293784,
-          "stop" : 1488744294066,
-          "duration" : 282
+          "start" : 1488745760238,
+          "stop" : 1488745760414,
+          "duration" : 176
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "14b332ab6309a68b",
-        "name" : "slider increase {defaultNewNumber=2.1, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=750, newNumber=3.1, newSpeed=Мбит/сек (макс.), newPrice=800}",
-        "title" : "slider increase {defaultNewNumber=2.1, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=750, newNumber=3.1, newSpeed=Мбит/сек (макс.), newPrice=800}",
+        "uid" : "e8b37c3650d95863",
+        "name" : "slider increase {newNumber=1.0, newSpeed=Мбит/сек (макс.), newPrice=600}",
+        "title" : "slider increase {newNumber=1.0, newSpeed=Мбит/сек (макс.), newPrice=600}",
         "time" : {
-          "start" : 1488744294067,
-          "stop" : 1488744294347,
-          "duration" : 280
+          "start" : 1488745760415,
+          "stop" : 1488745760605,
+          "duration" : 190
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "a68e32c69e594eb7",
-        "name" : "slider increase {defaultNewNumber=3.1, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=800, newNumber=4.1, newSpeed=Мбит/сек (макс.), newPrice=850}",
-        "title" : "slider increase {defaultNewNumber=3.1, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=800, newNumber=4.1, newSpeed=Мбит/сек (макс.), newPrice=850}",
+        "uid" : "11da1b0538cb8b33",
+        "name" : "slider increase {newNumber=1.3, newSpeed=Мбит/сек (макс.), newPrice=650}",
+        "title" : "slider increase {newNumber=1.3, newSpeed=Мбит/сек (макс.), newPrice=650}",
         "time" : {
-          "start" : 1488744294348,
-          "stop" : 1488744294607,
-          "duration" : 259
+          "start" : 1488745760606,
+          "stop" : 1488745760776,
+          "duration" : 170
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "f12f00fd5695a693",
-        "name" : "slider increase {defaultNewNumber=4.1, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=850, newNumber=5.0, newSpeed=Мбит/сек (макс.), newPrice=900}",
-        "title" : "slider increase {defaultNewNumber=4.1, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=850, newNumber=5.0, newSpeed=Мбит/сек (макс.), newPrice=900}",
+        "uid" : "f84c95101e96882c",
+        "name" : "slider increase {newNumber=1.7, newSpeed=Мбит/сек (макс.), newPrice=700}",
+        "title" : "slider increase {newNumber=1.7, newSpeed=Мбит/сек (макс.), newPrice=700}",
         "time" : {
-          "start" : 1488744294608,
-          "stop" : 1488744294889,
-          "duration" : 281
+          "start" : 1488745760778,
+          "stop" : 1488745760968,
+          "duration" : 190
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "8d16367d4912ae5d",
-        "name" : "slider increase {defaultNewNumber=5.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=900, newNumber=5.7, newSpeed=Мбит/сек (макс.), newPrice=950}",
-        "title" : "slider increase {defaultNewNumber=5.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=900, newNumber=5.7, newSpeed=Мбит/сек (макс.), newPrice=950}",
+        "uid" : "367c207c170ff806",
+        "name" : "slider increase {newNumber=2.1, newSpeed=Мбит/сек (макс.), newPrice=750}",
+        "title" : "slider increase {newNumber=2.1, newSpeed=Мбит/сек (макс.), newPrice=750}",
         "time" : {
-          "start" : 1488744294890,
-          "stop" : 1488744295157,
-          "duration" : 267
+          "start" : 1488745760970,
+          "stop" : 1488745761142,
+          "duration" : 172
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "ec3232e096871b0b",
-        "name" : "slider increase {defaultNewNumber=5.7, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=950, newNumber=6.4, newSpeed=Мбит/сек (макс.), newPrice=1000}",
-        "title" : "slider increase {defaultNewNumber=5.7, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=950, newNumber=6.4, newSpeed=Мбит/сек (макс.), newPrice=1000}",
+        "uid" : "381f95fbb2998612",
+        "name" : "slider increase {newNumber=3.1, newSpeed=Мбит/сек (макс.), newPrice=800}",
+        "title" : "slider increase {newNumber=3.1, newSpeed=Мбит/сек (макс.), newPrice=800}",
         "time" : {
-          "start" : 1488744295158,
-          "stop" : 1488744295430,
-          "duration" : 272
+          "start" : 1488745761143,
+          "stop" : 1488745761324,
+          "duration" : 181
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "5b42e67100d3e0e",
-        "name" : "slider increase {defaultNewNumber=6.4, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1000, newNumber=7.1, newSpeed=Мбит/сек (макс.), newPrice=1050}",
-        "title" : "slider increase {defaultNewNumber=6.4, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1000, newNumber=7.1, newSpeed=Мбит/сек (макс.), newPrice=1050}",
+        "uid" : "96a9ab07ae1aa296",
+        "name" : "slider increase {newNumber=4.1, newSpeed=Мбит/сек (макс.), newPrice=850}",
+        "title" : "slider increase {newNumber=4.1, newSpeed=Мбит/сек (макс.), newPrice=850}",
         "time" : {
-          "start" : 1488744295431,
-          "stop" : 1488744295712,
-          "duration" : 281
+          "start" : 1488745761325,
+          "stop" : 1488745761493,
+          "duration" : 168
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "235466899b14503c",
-        "name" : "slider increase {defaultNewNumber=7.1, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1050, newNumber=7.8, newSpeed=Мбит/сек (макс.), newPrice=1100}",
-        "title" : "slider increase {defaultNewNumber=7.1, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1050, newNumber=7.8, newSpeed=Мбит/сек (макс.), newPrice=1100}",
+        "uid" : "9b1e5c27085de3b2",
+        "name" : "slider increase {newNumber=5.0, newSpeed=Мбит/сек (макс.), newPrice=900}",
+        "title" : "slider increase {newNumber=5.0, newSpeed=Мбит/сек (макс.), newPrice=900}",
         "time" : {
-          "start" : 1488744295713,
-          "stop" : 1488744295995,
-          "duration" : 282
+          "start" : 1488745761494,
+          "stop" : 1488745761686,
+          "duration" : 192
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "d6788eba6faebb81",
-        "name" : "slider increase {defaultNewNumber=7.8, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1100, newNumber=8.5, newSpeed=Мбит/сек (макс.), newPrice=1150}",
-        "title" : "slider increase {defaultNewNumber=7.8, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1100, newNumber=8.5, newSpeed=Мбит/сек (макс.), newPrice=1150}",
+        "uid" : "c5a2a8b736d03c03",
+        "name" : "slider increase {newNumber=5.7, newSpeed=Мбит/сек (макс.), newPrice=950}",
+        "title" : "slider increase {newNumber=5.7, newSpeed=Мбит/сек (макс.), newPrice=950}",
         "time" : {
-          "start" : 1488744295997,
-          "stop" : 1488744296274,
-          "duration" : 277
+          "start" : 1488745761687,
+          "stop" : 1488745761860,
+          "duration" : 173
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "b0e3a7b4eb3ab39",
-        "name" : "slider increase {defaultNewNumber=8.5, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1150, newNumber=9.2, newSpeed=Мбит/сек (макс.), newPrice=1200}",
-        "title" : "slider increase {defaultNewNumber=8.5, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1150, newNumber=9.2, newSpeed=Мбит/сек (макс.), newPrice=1200}",
+        "uid" : "e138399760f95cd6",
+        "name" : "slider increase {newNumber=6.4, newSpeed=Мбит/сек (макс.), newPrice=1000}",
+        "title" : "slider increase {newNumber=6.4, newSpeed=Мбит/сек (макс.), newPrice=1000}",
         "time" : {
-          "start" : 1488744296275,
-          "stop" : 1488744296558,
-          "duration" : 283
+          "start" : 1488745761861,
+          "stop" : 1488745762042,
+          "duration" : 181
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "e56051177d80124c",
-        "name" : "slider increase {defaultNewNumber=9.2, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1200, newNumber=10.0, newSpeed=Мбит/сек (макс.), newPrice=1250}",
-        "title" : "slider increase {defaultNewNumber=9.2, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1200, newNumber=10.0, newSpeed=Мбит/сек (макс.), newPrice=1250}",
+        "uid" : "46f6f3d7e2328e3a",
+        "name" : "slider increase {newNumber=7.1, newSpeed=Мбит/сек (макс.), newPrice=1050}",
+        "title" : "slider increase {newNumber=7.1, newSpeed=Мбит/сек (макс.), newPrice=1050}",
         "time" : {
-          "start" : 1488744296560,
-          "stop" : 1488744296838,
-          "duration" : 278
+          "start" : 1488745762043,
+          "stop" : 1488745762230,
+          "duration" : 187
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "551b207d10e663e0",
-        "name" : "slider increase {defaultNewNumber=10.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1250, newNumber=12.0, newSpeed=Мбит/сек (макс.), newPrice=1300}",
-        "title" : "slider increase {defaultNewNumber=10.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1250, newNumber=12.0, newSpeed=Мбит/сек (макс.), newPrice=1300}",
+        "uid" : "f5343acbba94bcae",
+        "name" : "slider increase {newNumber=7.8, newSpeed=Мбит/сек (макс.), newPrice=1100}",
+        "title" : "slider increase {newNumber=7.8, newSpeed=Мбит/сек (макс.), newPrice=1100}",
         "time" : {
-          "start" : 1488744296839,
-          "stop" : 1488744297123,
-          "duration" : 284
+          "start" : 1488745762231,
+          "stop" : 1488745762392,
+          "duration" : 161
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "ad04752929456fa8",
-        "name" : "slider increase {defaultNewNumber=12.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1300, newNumber=15.0, newSpeed=Мбит/сек (макс.), newPrice=1350}",
-        "title" : "slider increase {defaultNewNumber=12.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1300, newNumber=15.0, newSpeed=Мбит/сек (макс.), newPrice=1350}",
+        "uid" : "195006262539caa5",
+        "name" : "slider increase {newNumber=8.5, newSpeed=Мбит/сек (макс.), newPrice=1150}",
+        "title" : "slider increase {newNumber=8.5, newSpeed=Мбит/сек (макс.), newPrice=1150}",
         "time" : {
-          "start" : 1488744297124,
-          "stop" : 1488744297401,
-          "duration" : 277
+          "start" : 1488745762393,
+          "stop" : 1488745762551,
+          "duration" : 158
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "a94060b688604719",
-        "name" : "slider increase {defaultNewNumber=15.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1350, newNumber=Макс, newSpeed=Мбит/сек (макс.), newPrice=1400}",
-        "title" : "slider increase {defaultNewNumber=15.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1350, newNumber=Макс, newSpeed=Мбит/сек (макс.), newPrice=1400}",
+        "uid" : "71bf412b1698247b",
+        "name" : "slider increase {newNumber=9.2, newSpeed=Мбит/сек (макс.), newPrice=1200}",
+        "title" : "slider increase {newNumber=9.2, newSpeed=Мбит/сек (макс.), newPrice=1200}",
         "time" : {
-          "start" : 1488744297402,
-          "stop" : 1488744297673,
-          "duration" : 271
+          "start" : 1488745762552,
+          "stop" : 1488745762721,
+          "duration" : 169
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "4391fd1b0596cc93",
-        "name" : "slider decrease {defaultNewNumber=Макс, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1400, newNumber=15.0, newSpeed=Мбит/сек (макс.), newPrice=1350}",
-        "title" : "slider decrease {defaultNewNumber=Макс, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1400, newNumber=15.0, newSpeed=Мбит/сек (макс.), newPrice=1350}",
+        "uid" : "cee2f288bdb67a4a",
+        "name" : "slider increase {newNumber=10.0, newSpeed=Мбит/сек (макс.), newPrice=1250}",
+        "title" : "slider increase {newNumber=10.0, newSpeed=Мбит/сек (макс.), newPrice=1250}",
         "time" : {
-          "start" : 1488744297674,
-          "stop" : 1488744297990,
-          "duration" : 316
+          "start" : 1488745762722,
+          "stop" : 1488745762887,
+          "duration" : 165
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "a7323ea832441521",
-        "name" : "slider decrease {defaultNewNumber=15.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1350, newNumber=12.0, newSpeed=Мбит/сек (макс.), newPrice=1300}",
-        "title" : "slider decrease {defaultNewNumber=15.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1350, newNumber=12.0, newSpeed=Мбит/сек (макс.), newPrice=1300}",
+        "uid" : "4fb7f22eb85b8f11",
+        "name" : "slider increase {newNumber=12.0, newSpeed=Мбит/сек (макс.), newPrice=1300}",
+        "title" : "slider increase {newNumber=12.0, newSpeed=Мбит/сек (макс.), newPrice=1300}",
         "time" : {
-          "start" : 1488744297991,
-          "stop" : 1488744298258,
-          "duration" : 267
+          "start" : 1488745762888,
+          "stop" : 1488745763057,
+          "duration" : 169
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "b633bc7a15eb884d",
-        "name" : "slider decrease {defaultNewNumber=12.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1300, newNumber=10.0, newSpeed=Мбит/сек (макс.), newPrice=1250}",
-        "title" : "slider decrease {defaultNewNumber=12.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1300, newNumber=10.0, newSpeed=Мбит/сек (макс.), newPrice=1250}",
+        "uid" : "9404a9a79bbe00f2",
+        "name" : "slider increase {newNumber=15.0, newSpeed=Мбит/сек (макс.), newPrice=1350}",
+        "title" : "slider increase {newNumber=15.0, newSpeed=Мбит/сек (макс.), newPrice=1350}",
         "time" : {
-          "start" : 1488744298259,
-          "stop" : 1488744298520,
-          "duration" : 261
+          "start" : 1488745763058,
+          "stop" : 1488745763239,
+          "duration" : 181
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "e153fc15bdca26fb",
-        "name" : "slider decrease {defaultNewNumber=10.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1250, newNumber=9.2, newSpeed=Мбит/сек (макс.), newPrice=1200}",
-        "title" : "slider decrease {defaultNewNumber=10.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1250, newNumber=9.2, newSpeed=Мбит/сек (макс.), newPrice=1200}",
+        "uid" : "bc9daa5e29d3bcc",
+        "name" : "slider increase {newNumber=Макс, newSpeed=Мбит/сек (макс.), newPrice=1400}",
+        "title" : "slider increase {newNumber=Макс, newSpeed=Мбит/сек (макс.), newPrice=1400}",
         "time" : {
-          "start" : 1488744298521,
-          "stop" : 1488744298781,
-          "duration" : 260
+          "start" : 1488745763240,
+          "stop" : 1488745763426,
+          "duration" : 186
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "f6b6eee1feb02d6f",
-        "name" : "slider decrease {defaultNewNumber=9.2, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1200, newNumber=8.5, newSpeed=Мбит/сек (макс.), newPrice=1150}",
-        "title" : "slider decrease {defaultNewNumber=9.2, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1200, newNumber=8.5, newSpeed=Мбит/сек (макс.), newPrice=1150}",
+        "uid" : "8a55951d9fa2f0b9",
+        "name" : "slider decrease {newNumber=15.0, newSpeed=Мбит/сек (макс.), newPrice=1350}",
+        "title" : "slider decrease {newNumber=15.0, newSpeed=Мбит/сек (макс.), newPrice=1350}",
         "time" : {
-          "start" : 1488744298782,
-          "stop" : 1488744299051,
-          "duration" : 269
+          "start" : 1488745763427,
+          "stop" : 1488745763627,
+          "duration" : 200
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "98b4e42e17769f36",
-        "name" : "slider decrease {defaultNewNumber=8.5, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1150, newNumber=7.8, newSpeed=Мбит/сек (макс.), newPrice=1100}",
-        "title" : "slider decrease {defaultNewNumber=8.5, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1150, newNumber=7.8, newSpeed=Мбит/сек (макс.), newPrice=1100}",
+        "uid" : "9111111c46d4adae",
+        "name" : "slider decrease {newNumber=12.0, newSpeed=Мбит/сек (макс.), newPrice=1300}",
+        "title" : "slider decrease {newNumber=12.0, newSpeed=Мбит/сек (макс.), newPrice=1300}",
         "time" : {
-          "start" : 1488744299052,
-          "stop" : 1488744299350,
-          "duration" : 298
+          "start" : 1488745763628,
+          "stop" : 1488745763791,
+          "duration" : 163
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "a52305c26b402287",
-        "name" : "slider decrease {defaultNewNumber=7.8, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1100, newNumber=7.1, newSpeed=Мбит/сек (макс.), newPrice=1050}",
-        "title" : "slider decrease {defaultNewNumber=7.8, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1100, newNumber=7.1, newSpeed=Мбит/сек (макс.), newPrice=1050}",
+        "uid" : "e85e3077a1f9d982",
+        "name" : "slider decrease {newNumber=10.0, newSpeed=Мбит/сек (макс.), newPrice=1250}",
+        "title" : "slider decrease {newNumber=10.0, newSpeed=Мбит/сек (макс.), newPrice=1250}",
         "time" : {
-          "start" : 1488744299351,
-          "stop" : 1488744299625,
-          "duration" : 274
+          "start" : 1488745763792,
+          "stop" : 1488745763955,
+          "duration" : 163
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "bb3abf32178eb68",
-        "name" : "slider decrease {defaultNewNumber=7.1, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1050, newNumber=6.4, newSpeed=Мбит/сек (макс.), newPrice=1000}",
-        "title" : "slider decrease {defaultNewNumber=7.1, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1050, newNumber=6.4, newSpeed=Мбит/сек (макс.), newPrice=1000}",
+        "uid" : "1b978fe65fac6333",
+        "name" : "slider decrease {newNumber=9.2, newSpeed=Мбит/сек (макс.), newPrice=1200}",
+        "title" : "slider decrease {newNumber=9.2, newSpeed=Мбит/сек (макс.), newPrice=1200}",
         "time" : {
-          "start" : 1488744299626,
-          "stop" : 1488744299901,
-          "duration" : 275
+          "start" : 1488745763957,
+          "stop" : 1488745764127,
+          "duration" : 170
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "bf29b435764128c6",
-        "name" : "slider decrease {defaultNewNumber=6.4, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1000, newNumber=5.7, newSpeed=Мбит/сек (макс.), newPrice=950}",
-        "title" : "slider decrease {defaultNewNumber=6.4, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=1000, newNumber=5.7, newSpeed=Мбит/сек (макс.), newPrice=950}",
+        "uid" : "827ef7d4e2df59c2",
+        "name" : "slider decrease {newNumber=8.5, newSpeed=Мбит/сек (макс.), newPrice=1150}",
+        "title" : "slider decrease {newNumber=8.5, newSpeed=Мбит/сек (макс.), newPrice=1150}",
         "time" : {
-          "start" : 1488744299902,
-          "stop" : 1488744300165,
-          "duration" : 263
+          "start" : 1488745764128,
+          "stop" : 1488745764305,
+          "duration" : 177
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "b801e193a6cd9b45",
-        "name" : "slider decrease {defaultNewNumber=5.7, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=950, newNumber=5.0, newSpeed=Мбит/сек (макс.), newPrice=900}",
-        "title" : "slider decrease {defaultNewNumber=5.7, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=950, newNumber=5.0, newSpeed=Мбит/сек (макс.), newPrice=900}",
+        "uid" : "8841adeb22199a19",
+        "name" : "slider decrease {newNumber=7.8, newSpeed=Мбит/сек (макс.), newPrice=1100}",
+        "title" : "slider decrease {newNumber=7.8, newSpeed=Мбит/сек (макс.), newPrice=1100}",
         "time" : {
-          "start" : 1488744300166,
-          "stop" : 1488744300433,
-          "duration" : 267
+          "start" : 1488745764307,
+          "stop" : 1488745764461,
+          "duration" : 154
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "88d7fccadd29bfc2",
-        "name" : "slider decrease {defaultNewNumber=5.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=900, newNumber=4.1, newSpeed=Мбит/сек (макс.), newPrice=850}",
-        "title" : "slider decrease {defaultNewNumber=5.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=900, newNumber=4.1, newSpeed=Мбит/сек (макс.), newPrice=850}",
+        "uid" : "99f0de7f1a5ad9fe",
+        "name" : "slider decrease {newNumber=7.1, newSpeed=Мбит/сек (макс.), newPrice=1050}",
+        "title" : "slider decrease {newNumber=7.1, newSpeed=Мбит/сек (макс.), newPrice=1050}",
         "time" : {
-          "start" : 1488744300434,
-          "stop" : 1488744300715,
-          "duration" : 281
+          "start" : 1488745764462,
+          "stop" : 1488745764631,
+          "duration" : 169
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "12aaf27318c564cf",
-        "name" : "slider decrease {defaultNewNumber=4.1, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=850, newNumber=3.1, newSpeed=Мбит/сек (макс.), newPrice=800}",
-        "title" : "slider decrease {defaultNewNumber=4.1, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=850, newNumber=3.1, newSpeed=Мбит/сек (макс.), newPrice=800}",
+        "uid" : "df448088c692e67c",
+        "name" : "slider decrease {newNumber=6.4, newSpeed=Мбит/сек (макс.), newPrice=1000}",
+        "title" : "slider decrease {newNumber=6.4, newSpeed=Мбит/сек (макс.), newPrice=1000}",
         "time" : {
-          "start" : 1488744300716,
-          "stop" : 1488744300988,
-          "duration" : 272
+          "start" : 1488745764632,
+          "stop" : 1488745764793,
+          "duration" : 161
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "2657ab9f01218c7d",
-        "name" : "slider decrease {defaultNewNumber=3.1, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=800, newNumber=2.1, newSpeed=Мбит/сек (макс.), newPrice=750}",
-        "title" : "slider decrease {defaultNewNumber=3.1, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=800, newNumber=2.1, newSpeed=Мбит/сек (макс.), newPrice=750}",
+        "uid" : "b4176c691b02bd04",
+        "name" : "slider decrease {newNumber=5.7, newSpeed=Мбит/сек (макс.), newPrice=950}",
+        "title" : "slider decrease {newNumber=5.7, newSpeed=Мбит/сек (макс.), newPrice=950}",
         "time" : {
-          "start" : 1488744300989,
-          "stop" : 1488744301266,
-          "duration" : 277
+          "start" : 1488745764793,
+          "stop" : 1488745764973,
+          "duration" : 180
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "e7868fd778981089",
-        "name" : "slider decrease {defaultNewNumber=2.1, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=750, newNumber=1.7, newSpeed=Мбит/сек (макс.), newPrice=700}",
-        "title" : "slider decrease {defaultNewNumber=2.1, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=750, newNumber=1.7, newSpeed=Мбит/сек (макс.), newPrice=700}",
+        "uid" : "4e0282262b6efab3",
+        "name" : "slider decrease {newNumber=5.0, newSpeed=Мбит/сек (макс.), newPrice=900}",
+        "title" : "slider decrease {newNumber=5.0, newSpeed=Мбит/сек (макс.), newPrice=900}",
         "time" : {
-          "start" : 1488744301267,
-          "stop" : 1488744301538,
-          "duration" : 271
+          "start" : 1488745764974,
+          "stop" : 1488745765143,
+          "duration" : 169
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "f166efdff83a48b9",
-        "name" : "slider decrease {defaultNewNumber=1.7, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=700, newNumber=1.3, newSpeed=Мбит/сек (макс.), newPrice=650}",
-        "title" : "slider decrease {defaultNewNumber=1.7, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=700, newNumber=1.3, newSpeed=Мбит/сек (макс.), newPrice=650}",
+        "uid" : "a82ee56aa07fb258",
+        "name" : "slider decrease {newNumber=4.1, newSpeed=Мбит/сек (макс.), newPrice=850}",
+        "title" : "slider decrease {newNumber=4.1, newSpeed=Мбит/сек (макс.), newPrice=850}",
         "time" : {
-          "start" : 1488744301539,
-          "stop" : 1488744301800,
-          "duration" : 261
+          "start" : 1488745765144,
+          "stop" : 1488745765311,
+          "duration" : 167
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "9683190b6ef6be47",
-        "name" : "slider decrease {defaultNewNumber=1.3, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=650, newNumber=1.0, newSpeed=Мбит/сек (макс.), newPrice=600}",
-        "title" : "slider decrease {defaultNewNumber=1.3, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=650, newNumber=1.0, newSpeed=Мбит/сек (макс.), newPrice=600}",
+        "uid" : "fdc10ed9bd3579a9",
+        "name" : "slider decrease {newNumber=3.1, newSpeed=Мбит/сек (макс.), newPrice=800}",
+        "title" : "slider decrease {newNumber=3.1, newSpeed=Мбит/сек (макс.), newPrice=800}",
         "time" : {
-          "start" : 1488744301801,
-          "stop" : 1488744302065,
-          "duration" : 264
+          "start" : 1488745765312,
+          "stop" : 1488745765474,
+          "duration" : 162
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "8dcf526aee8916ff",
-        "name" : "slider decrease {defaultNewNumber=1.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=600, newNumber=896, newSpeed=Кбит/сек (макс.), newPrice=550}",
-        "title" : "slider decrease {defaultNewNumber=1.0, defaultNewSpeed=Мбит/сек (макс.), defaultNewPrice=600, newNumber=896, newSpeed=Кбит/сек (макс.), newPrice=550}",
+        "uid" : "b0254dda3e4cfe9a",
+        "name" : "slider decrease {newNumber=2.1, newSpeed=Мбит/сек (макс.), newPrice=750}",
+        "title" : "slider decrease {newNumber=2.1, newSpeed=Мбит/сек (макс.), newPrice=750}",
         "time" : {
-          "start" : 1488744302065,
-          "stop" : 1488744302349,
-          "duration" : 284
+          "start" : 1488745765475,
+          "stop" : 1488745765643,
+          "duration" : 168
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "c92a5e844e69b6fa",
-        "name" : "slider decrease {defaultNewNumber=896, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=550, newNumber=768, newSpeed=Кбит/сек (макс.), newPrice=500}",
-        "title" : "slider decrease {defaultNewNumber=896, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=550, newNumber=768, newSpeed=Кбит/сек (макс.), newPrice=500}",
+        "uid" : "3c81390679462fc2",
+        "name" : "slider decrease {newNumber=1.7, newSpeed=Мбит/сек (макс.), newPrice=700}",
+        "title" : "slider decrease {newNumber=1.7, newSpeed=Мбит/сек (макс.), newPrice=700}",
         "time" : {
-          "start" : 1488744302350,
-          "stop" : 1488744302617,
-          "duration" : 267
+          "start" : 1488745765644,
+          "stop" : 1488745765818,
+          "duration" : 174
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "7414263bdf627232",
-        "name" : "slider decrease {defaultNewNumber=768, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=500, newNumber=640, newSpeed=Кбит/сек (макс.), newPrice=450}",
-        "title" : "slider decrease {defaultNewNumber=768, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=500, newNumber=640, newSpeed=Кбит/сек (макс.), newPrice=450}",
+        "uid" : "892c549f2905443d",
+        "name" : "slider decrease {newNumber=1.3, newSpeed=Мбит/сек (макс.), newPrice=650}",
+        "title" : "slider decrease {newNumber=1.3, newSpeed=Мбит/сек (макс.), newPrice=650}",
         "time" : {
-          "start" : 1488744302618,
-          "stop" : 1488744302869,
-          "duration" : 251
+          "start" : 1488745765819,
+          "stop" : 1488745765988,
+          "duration" : 169
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "3cb03db83033c5eb",
-        "name" : "slider decrease {defaultNewNumber=640, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=450, newNumber=512, newSpeed=Кбит/сек (макс.), newPrice=400}",
-        "title" : "slider decrease {defaultNewNumber=640, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=450, newNumber=512, newSpeed=Кбит/сек (макс.), newPrice=400}",
+        "uid" : "76dd5942afa18a95",
+        "name" : "slider decrease {newNumber=1.0, newSpeed=Мбит/сек (макс.), newPrice=600}",
+        "title" : "slider decrease {newNumber=1.0, newSpeed=Мбит/сек (макс.), newPrice=600}",
         "time" : {
-          "start" : 1488744302870,
-          "stop" : 1488744303133,
-          "duration" : 263
+          "start" : 1488745765989,
+          "stop" : 1488745766156,
+          "duration" : 167
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "d50e4078353cb945",
-        "name" : "slider decrease {defaultNewNumber=512, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=400, newNumber=416, newSpeed=Кбит/сек (макс.), newPrice=350}",
-        "title" : "slider decrease {defaultNewNumber=512, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=400, newNumber=416, newSpeed=Кбит/сек (макс.), newPrice=350}",
+        "uid" : "f857508f009f10ce",
+        "name" : "slider decrease {newNumber=896, newSpeed=Кбит/сек (макс.), newPrice=550}",
+        "title" : "slider decrease {newNumber=896, newSpeed=Кбит/сек (макс.), newPrice=550}",
         "time" : {
-          "start" : 1488744303134,
-          "stop" : 1488744303406,
-          "duration" : 272
+          "start" : 1488745766157,
+          "stop" : 1488745766322,
+          "duration" : 165
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "e97ccea54b4fc248",
-        "name" : "slider decrease {defaultNewNumber=416, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=350, newNumber=320, newSpeed=Кбит/сек (макс.), newPrice=300}",
-        "title" : "slider decrease {defaultNewNumber=416, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=350, newNumber=320, newSpeed=Кбит/сек (макс.), newPrice=300}",
+        "uid" : "530fee9f3e8d5756",
+        "name" : "slider decrease {newNumber=768, newSpeed=Кбит/сек (макс.), newPrice=500}",
+        "title" : "slider decrease {newNumber=768, newSpeed=Кбит/сек (макс.), newPrice=500}",
         "time" : {
-          "start" : 1488744303407,
-          "stop" : 1488744303664,
-          "duration" : 257
+          "start" : 1488745766324,
+          "stop" : 1488745766506,
+          "duration" : 182
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "ddec552aaa31b783",
-        "name" : "slider decrease {defaultNewNumber=320, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=300, newNumber=64, newSpeed=Кбит/сек (макс.), newPrice=0}",
-        "title" : "slider decrease {defaultNewNumber=320, defaultNewSpeed=Кбит/сек (макс.), defaultNewPrice=300, newNumber=64, newSpeed=Кбит/сек (макс.), newPrice=0}",
+        "uid" : "351610cae75cb4fb",
+        "name" : "slider decrease {newNumber=640, newSpeed=Кбит/сек (макс.), newPrice=450}",
+        "title" : "slider decrease {newNumber=640, newSpeed=Кбит/сек (макс.), newPrice=450}",
         "time" : {
-          "start" : 1488744303665,
-          "stop" : 1488744303926,
-          "duration" : 261
+          "start" : 1488745766507,
+          "stop" : 1488745766670,
+          "duration" : 163
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "9e24909d6a18f860",
+        "name" : "slider decrease {newNumber=512, newSpeed=Кбит/сек (макс.), newPrice=400}",
+        "title" : "slider decrease {newNumber=512, newSpeed=Кбит/сек (макс.), newPrice=400}",
+        "time" : {
+          "start" : 1488745766671,
+          "stop" : 1488745766853,
+          "duration" : 182
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "73d944287dba0f05",
+        "name" : "slider decrease {newNumber=416, newSpeed=Кбит/сек (макс.), newPrice=350}",
+        "title" : "slider decrease {newNumber=416, newSpeed=Кбит/сек (макс.), newPrice=350}",
+        "time" : {
+          "start" : 1488745766854,
+          "stop" : 1488745767019,
+          "duration" : 165
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "bce87203c59e405e",
+        "name" : "slider decrease {newNumber=320, newSpeed=Кбит/сек (макс.), newPrice=300}",
+        "title" : "slider decrease {newNumber=320, newSpeed=Кбит/сек (макс.), newPrice=300}",
+        "time" : {
+          "start" : 1488745767020,
+          "stop" : 1488745767192,
+          "duration" : 172
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "c8d41ff61affee7d",
+        "name" : "slider decrease {newNumber=64, newSpeed=Кбит/сек (макс.), newPrice=0}",
+        "title" : "slider decrease {newNumber=64, newSpeed=Кбит/сек (макс.), newPrice=0}",
+        "time" : {
+          "start" : 1488745767193,
+          "stop" : 1488745767359,
+          "duration" : 166
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
