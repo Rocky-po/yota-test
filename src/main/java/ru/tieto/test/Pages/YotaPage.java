@@ -102,7 +102,7 @@ public class YotaPage {
     public YotaPage getBalance(String expectedBalance){
         String getBalance = driver.findElement(balance).getText();
         if (!expectedBalance.equals(getBalance))
-            Assert.fail("Текущий баланс несоответствует ожидаемому значению: ожтдаем - " + expectedBalance + ", получили - " + getBalance);
+            Assert.fail("Текущий баланс несоответствует ожидаемому значению: ожидаем - " + expectedBalance + ", получили - " + getBalance);
         return this;
     }
 

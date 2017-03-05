@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Wed Mar 01 03:23:58 MSK 2017:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-015a-8740-88ab-00000b8adeb8 
+Sun Mar 05 15:12:05 MSK 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-015a-9e62-4539-00000b7d9d38 
 on database directory /home/rocky-po/WorkSpace/tieto/yota-test/sliderDB with class loader sun.misc.Launcher$AppClassLoader@42a57993 
 Loaded from file:/home/rocky-po/WorkSpace/tieto/yota-test/test-slider-1.0.0-SNAPSHOT.jar
 java.vendor=Oracle Corporation

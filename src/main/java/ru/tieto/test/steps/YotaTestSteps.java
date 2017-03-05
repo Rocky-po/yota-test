@@ -2,7 +2,6 @@ package ru.tieto.test.steps;
 
 import org.jbehave.core.annotations.*;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import ru.tieto.test.Pages.YotaPage;
@@ -13,16 +12,14 @@ import java.io.IOException;
 
 public class YotaTestSteps {
 
-    WebDriver driver;
     YotaPage yotaPage;
 
-//    @BeforeStories
+    @BeforeStories
     public void startProject() throws IOException, InterruptedException {
         ProcessBuilder processBuilder = new ProcessBuilder("java", "-jar", "test-slider-1.0.0-SNAPSHOT.jar");
         processBuilder.directory(new File("./"));
         processBuilder.start();
 //        Thread.sleep(5000);
-        System.out.println("Все пучком");
     }
 
     @BeforeStory
@@ -149,8 +146,9 @@ public class YotaTestSteps {
     }
 
     @AfterStory
-    public void closeWindow(){
+    public void closeWindow() throws InterruptedException {
         yotaPage.doReset();
+        yotaPage.waitForReview();
         yotaPage.close();
     }
 
