@@ -40,6 +40,12 @@ public class YotaPage {
         return this;
     }
 
+    public YotaPage checkPage(){
+        if (!driver.getCurrentUrl().equals("http://localhost:4567/index.html"))
+            Assert.fail("Открылась неверная страница, проверять здесь нечего");
+        return this;
+    }
+
     public YotaPage decreaseSlider(){
         WebElement element = driver.findElement(decreaseSlider);
         javaScriptClick(element);
@@ -120,6 +126,18 @@ public class YotaPage {
     public YotaPage connectionButtonDisabled(){
         if (!"btn disabled".equals(driver.findElement(connectionButton).getAttribute("class")))
             Assert.fail("Кнопка подключить - активна, хотя должна быть неактивна");
+        return this;
+    }
+
+    public YotaPage connectionButtonEnabled(){
+        if (!"btn".equals(driver.findElement(connectionButton).getAttribute("class")))
+            Assert.fail("Кнопка подключить - неактивна, хотя должна быть активна");
+        return this;
+    }
+
+    public YotaPage checkThatBalanceAboveZero(){
+        if (Integer.parseInt((driver.findElement(balance).getText())) < 0)
+            Assert.fail("Баланс стал отрицательным");
         return this;
     }
 

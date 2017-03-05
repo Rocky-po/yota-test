@@ -10,6 +10,34 @@ Examples:
 |   defaultBalance | payNumber |   balance  |
 |   0              |    500    |    500     |
 |   500            |    1000   |    1500    |
+|   1500           |    0.5    |    1500.5  |
+
+
+Scenario: check that I can not input number of money less than zero
+
+Given I see that balance is <defaultBalance>
+When I add <payNumber> of money
+And I click top up balance
+And I wait changes
+Then I see that balance is <balance>
+
+Examples:
+|   defaultBalance | payNumber |   balance  |
+|   1500.5         |    -500   |    1500.5  |
+
+
+Scenario: check that balance can not be less than zero
+
+Given I see that balance is <defaultBalance>
+When I click reset button
+And I add <payNumber> of money
+And I click top up balance
+And I wait changes
+Then I see that balance is not less than zero
+
+Examples:
+|   defaultBalance | payNumber |
+|   1500.5         |    -500   |
 
 
 Scenario: check that to click button reset do reset all characters
@@ -52,7 +80,7 @@ Examples:
 |      64        |   Кбит/сек (макс.) |      0        |  300    |
 
 
-Scenario: check that I can't connect new conditions when I have same conditions
+Scenario: check that I can't connect new conditions when I have same condition
 
 Given I see default current <defaultCurNumber> of <defaultCurSpeed>
 And I see default current <defaultCurPrice>
@@ -76,6 +104,21 @@ Examples:
 |defaultCurNumber| defaultCurSpeed    |defaultCurPrice|payNumber|curNumber|     curSpeed       |curPrice  |
 |       64       |  Кбит/сек (макс.)  |      0        |  5000   |   416   |   Кбит/сек (макс.) |   350    |
 
+
+Scenario: check that when I have enough money and I have another condition button connection is active
+
+Given I see that balance is <defaultBalance>
+When I add <payNumber> of money
+And I click top up balance
+And I click increase button
+And I click increase button
+Then I see that connection button is enable
+And I click reset button
+
+Examples:
+
+|defaultBalance|payNumber|
+|       0      |   5000  |
 
 Scenario: check that I can connect new conditions
 

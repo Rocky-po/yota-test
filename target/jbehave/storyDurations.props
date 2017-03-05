@@ -1,7 +1,7 @@
 #org.jbehave.core.embedder.StoryManager
-#Sun Mar 05 16:29:11 MSK 2017
-ru/tieto/test/stories/yotaPanel.story=70000
+#Sun Mar 05 23:05:05 MSK 2017
+ru/tieto/test/stories/yotaPanel.story=74000
 ru/tieto/test/stories/yotaSliderTest.story=17000
 threads=1
-total=87000
-threadAverage=87000
+total=91000
+threadAverage=91000

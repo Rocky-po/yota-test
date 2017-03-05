@@ -29,6 +29,12 @@ public class YotaTestSteps {
         yotaPage.open(url);
     }
 
+    @Given("I am on yota page")
+    @Step("I am on yota page")
+    public void checkPage(){
+        yotaPage.checkPage();
+    }
+
     @Given("I see that new speed is <defaultNewNumber> of <defaultNewSpeed>")
     @Step("start with show new speed")
     public void checkDefaultNewSpeed(@Named("defaultNewNumber") String number, @Named("defaultNewSpeed") String speed) {
@@ -129,11 +135,23 @@ public class YotaTestSteps {
         yotaPage.connectionButtonDisabled();
     }
 
+    @Then("I see that connection button is enable")
+    @Step("Connection Button is enabled")
+    public void enablesConnectionButton(){
+        yotaPage.connectionButtonEnabled();
+    }
+
     @When("I click reset button")
     @Then("I click reset button")
     @Step("click reset button")
     public void clickResetButton(){
         yotaPage.doReset();
+    }
+
+    @Then("I see that balance is not less than zero")
+    @Step("balance can not be less then zero")
+    public void checkThatBalanceAboveZero(){
+        yotaPage.checkThatBalanceAboveZero();
     }
 
     @When("I wait changes")
