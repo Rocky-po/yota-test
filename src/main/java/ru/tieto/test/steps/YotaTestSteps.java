@@ -38,14 +38,14 @@ public class YotaTestSteps {
 
     @Given("I see that new speed is <defaultNewNumber> of <defaultNewSpeed>")
     @Step("start with show new speed")
-    public void checkDefaultNewSpeed(@Named("defaultNewNumber") String number, @Named("defaultNewSpeed") String speed){
+    public void checkDefaultNewSpeed(@Named("defaultNewNumber") String number, @Named("defaultNewSpeed") String speed) {
         yotaPage.checkNewNumberOfSpeed(number);
         yotaPage.checkNewSpeed(speed);
     }
 
     @Given("I see that new price is <defaultNewPrice>")
     @Step("start with show new price")
-    public void checkDefaultNewPrice(@Named("defaultNewPrice") String price){
+    public void checkDefaultNewPrice(@Named("defaultNewPrice") String price) {
         yotaPage.checkNewPrice(price);
     }
 
@@ -57,14 +57,14 @@ public class YotaTestSteps {
 
     @Then("I see that new speed is <newNumber> of <newSpeed>")
     @Step("show result new speed")
-    public void checkNewSpeed(@Named("newNumber") String number, @Named("newSpeed") String speed){
+    public void checkNewSpeed(@Named("newNumber") String number, @Named("newSpeed") String speed) {
         yotaPage.checkNewNumberOfSpeed(number);
         yotaPage.checkNewSpeed(speed);
     }
 
     @Then("I see that new price is <newPrice>")
     @Step("show result new price")
-    public void checkNewPrice(@Named("newPrice") String price){
+    public void checkNewPrice(@Named("newPrice") String price) {
         yotaPage.checkNewPrice(price);
     }
 
@@ -100,14 +100,14 @@ public class YotaTestSteps {
 
     @Given("I see default current <defaultCurNumber> of <defaultCurSpeed>")
     @Step("Default current conditions of speed")
-    public void checkDefaultCurrentSpees(@Named("defaultCurNumber") String defaultNumber, @Named("defaultCurSpeed") String defaultSpeed){
+    public void checkDefaultCurrentSpees(@Named("defaultCurNumber") String defaultNumber, @Named("defaultCurSpeed") String defaultSpeed) {
         yotaPage.checkCurrentNumberOfSpeed(defaultNumber);
         yotaPage.checkCurrentSpeed(defaultSpeed);
     }
 
     @Given("I see default current <defaultCurPrice>")
     @Step("Default current conditions of price")
-    public void checkDefaultPrice(@Named("defaultCurPrice") String defaultPrice){
+    public void checkDefaultPrice(@Named("defaultCurPrice") String defaultPrice) {
         yotaPage.checkCurrentPrice(defaultPrice);
     }
 
@@ -119,14 +119,14 @@ public class YotaTestSteps {
 
     @Then("I see current <curNumber> of <curSpeed>")
     @Step("current conditions of speed")
-    public void checkCurrentSpees(@Named("curNumber") String number, @Named("curSpeed") String speed){
+    public void checkCurrentSpeed(@Named("curNumber") String number, @Named("curSpeed") String speed) {
         yotaPage.checkCurrentNumberOfSpeed(number);
         yotaPage.checkCurrentSpeed(speed);
     }
 
     @Then("I see current <curPrice>")
     @Step("current conditions of price")
-    public void checkPrice(@Named("curPrice") String price){
+    public void checkPrice(@Named("curPrice") String price) {
         yotaPage.checkCurrentPrice(price);
     }
 
@@ -136,11 +136,16 @@ public class YotaTestSteps {
         yotaPage.connectionButtonDisabled();
     }
 
-    @Given("I click reset button")
+    @When("I click reset button")
     @Then("I click reset button")
     @Step("click reset button")
     public void clickResetButton(){
         yotaPage.doReset();
+    }
+
+    @When("I wait changes")
+    public void waitForReview() throws InterruptedException {
+        yotaPage.waitForReview();
     }
 
     @AfterStory

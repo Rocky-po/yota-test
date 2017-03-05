@@ -2,17 +2,17 @@
   "hash" : "9ae4a52f46fbba0c959575303f697deb73e72d63",
   "data" : [ {
     "statistic" : {
-      "total" : 24,
-      "passed" : 9,
-      "pending" : 1,
+      "total" : 75,
+      "passed" : 75,
+      "pending" : 0,
       "canceled" : 0,
-      "failed" : 14,
+      "failed" : 0,
       "broken" : 0
     },
     "time" : {
-      "start" : 1488516673320,
-      "stop" : 1488516682839,
-      "duration" : 9519
+      "start" : 1488714958572,
+      "stop" : 1488715033586,
+      "duration" : 75014
     },
     "name" : "total",
     "type" : "TOTAL"
@@ -20,57 +20,31 @@
     "name" : "defects",
     "type" : "DEFECTS",
     "data" : [ {
-      "count" : 2,
-      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 4.1, получили - 3.1",
-      "status" : "FAILED"
-    }, {
-      "count" : 1,
-      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 1.0, получили - 896",
-      "status" : "FAILED"
-    }, {
-      "count" : 1,
-      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 2.1, получили - 1.7",
-      "status" : "FAILED"
-    }, {
-      "count" : 1,
-      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 5.0, получили - 3.1",
-      "status" : "FAILED"
-    }, {
-      "count" : 1,
-      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 5.7, получили - 3.1",
-      "status" : "FAILED"
-    }, {
-      "count" : 1,
-      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 6.4, получили - 3.1",
-      "status" : "FAILED"
-    }, {
-      "count" : 1,
-      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 7.1, получили - 3.1",
-      "status" : "FAILED"
-    }, {
-      "count" : 1,
-      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 7.8, получили - 3.1",
-      "status" : "FAILED"
-    }, {
-      "count" : 1,
-      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 8.5, получили - 3.1",
-      "status" : "FAILED"
-    }, {
-      "count" : 1,
-      "message" : "AssertionError: Число текущей скорости не соответствует ожидаемому значению: ожидаем - 9.2, получили - 3.1",
-      "status" : "FAILED"
+      "count" : 0,
+      "message" : "There are no defects!",
+      "status" : "PASSED"
     } ]
   }, {
     "name" : "xunit",
     "type" : "TITLE_STATISTICS",
     "data" : [ {
+      "title" : "yotaSliderTest.story",
+      "statistic" : {
+        "total" : 46,
+        "passed" : 46,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      }
+    }, {
       "title" : "yotaPanel.story",
       "statistic" : {
-        "total" : 24,
-        "passed" : 9,
-        "pending" : 1,
+        "total" : 29,
+        "passed" : 29,
+        "pending" : 0,
         "canceled" : 0,
-        "failed" : 14,
+        "failed" : 0,
         "broken" : 0
       }
     } ]
@@ -80,11 +54,11 @@
     "data" : [ {
       "title" : "Without feature",
       "statistic" : {
-        "total" : 24,
-        "passed" : 9,
-        "pending" : 1,
+        "total" : 75,
+        "passed" : 75,
+        "pending" : 0,
         "canceled" : 0,
-        "failed" : 14,
+        "failed" : 0,
         "broken" : 0
       }
     } ]

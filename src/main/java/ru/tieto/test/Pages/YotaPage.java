@@ -52,42 +52,42 @@ public class YotaPage {
         return this;
     }
 
-    public YotaPage checkNewNumberOfSpeed(String expectedNumber){
+    public YotaPage checkNewNumberOfSpeed(String expectedNumber) {
         String getNewNumber = driver.findElement(newNumberOfSpeed).getText();
         if (!expectedNumber.equals(getNewNumber))
             Assert.fail("Число новой скорости не соответствует ожидаемому значению: ожидаем - " + expectedNumber + ", получаем - " + getNewNumber);
         return this;
     }
 
-    public YotaPage checkNewSpeed(String expectedSpeed){
+    public YotaPage checkNewSpeed(String expectedSpeed) {
         String getNewSpeed = driver.findElement(newSpeed).getText().trim();
         if (!expectedSpeed.equals(getNewSpeed))
             Assert.fail("Единица измерения новой скорости не соответствует ожидаемому значению: ожидаем - " + expectedSpeed + ", получили - " + getNewSpeed);
         return this;
     }
 
-    public YotaPage checkNewPrice(String expectedPrice){
+    public YotaPage checkNewPrice(String expectedPrice) {
         String getNewPrice = driver.findElement(newPrice).getText();
         if (!expectedPrice.equals(getNewPrice))
             Assert.fail("Новая стоимость несоответствует ожидаемому значению: ожидаем - " + expectedPrice + ", получили - " + getNewPrice);
         return this;
     }
 
-    public YotaPage checkCurrentNumberOfSpeed(String expectedNumber){
+    public YotaPage checkCurrentNumberOfSpeed(String expectedNumber) {
         String getCurNumber = driver.findElement(currentNumberOfSpeed).getText();
         if (!expectedNumber.equals(getCurNumber))
             Assert.fail("Число текущей скорости не соответствует ожидаемому значению: ожидаем - " + expectedNumber + ", получили - " + getCurNumber);
         return this;
     }
 
-    public YotaPage checkCurrentSpeed(String expectedSpeed){
+    public YotaPage checkCurrentSpeed(String expectedSpeed) {
         String getCurSpeed = driver.findElement(currentSpeed).getText();
         if (!expectedSpeed.equals(getCurSpeed))
             Assert.fail("Единица измерения текущей скорости не соответствует ожидаемому значению: ожидаем - " + expectedSpeed + ", получили - " + getCurSpeed);
         return this;
     }
 
-    public YotaPage checkCurrentPrice(String expectedPrice){
+    public YotaPage checkCurrentPrice(String expectedPrice) {
         String getCurPrice = driver.findElement(currentPrice).getText();
         if (!expectedPrice.equals(getCurPrice))
             Assert.fail("Текущая стоимость несоответствует ожидаемому значению: ожидаем - " + expectedPrice + ", получили - " + getCurPrice);
@@ -130,6 +130,11 @@ public class YotaPage {
 
     public YotaPage close(){
         driver.quit();
+        return this;
+    }
+
+    public YotaPage waitForReview() throws InterruptedException {
+        Thread.sleep(1500);
         return this;
     }
 
